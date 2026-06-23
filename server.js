@@ -6,8 +6,13 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, 'views'));
-app.use(express.static(path.join(__dirname, 'public')));
+
+/* When esbuild bundles this file into netlify/functions/app.js,
+   __dirname becomes /var/task/netlify/functions — not the project root.
+   LAMBDA_TASK_ROOT points to /var/task, which IS the project root. */
+const projectRoot = process.env.LAMBDA_TASK_ROOT || __dirname;
+app.set('views', path.join(projectRoot, 'views'));
+app.use(express.static(path.join(projectRoot, 'public')));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
