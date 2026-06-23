@@ -4,6 +4,8 @@
   functions = "netlify/functions"
 
 [functions]
+  node_bundler = "esbuild"
+  external_node_modules = ["ejs", "express", "serverless-http"]
   included_files = ["views/**", "data/**"]
 
 [[redirects]]
