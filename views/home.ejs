@@ -1,0 +1,113 @@
+<%- include('partials/head') %>
+<%- include('partials/nav') %>
+
+<main>
+  <!-- ═══════════════════════════════════ HERO ═══════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <canvas id="hero-canvas"></canvas>
+
+    <!-- Title — upper-left, away from lighthouse centre -->
+    <div class="hero__title-wrap">
+      <p class="hero__eyebrow">Creative Agency</p>
+      <h1 class="hero__title">Design Beyond<br><em>Imagination</em></h1>
+      <a href="/contact" class="btn btn--gold hero__cta">Start a Project</a>
+    </div>
+
+    <!-- Scroll hint -->
+    <div class="hero__scroll-hint">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ═══ INTRO ═══ -->
+  <section class="intro section">
+    <div class="container">
+      <div class="intro__grid">
+        <div class="intro__text reveal">
+          <span class="label">Who We Are</span>
+          <h2>We craft digital worlds that move people</h2>
+          <p>Zenexio is a full-service creative agency where strategy meets artistry. We navigate every project with unwavering vision — finding beauty and purpose in every pixel, every line of code, every campaign.</p>
+          <a href="/about" class="btn btn--gold">Discover Our Story</a>
+        </div>
+        <div class="intro__cards reveal" style="--d:.12s">
+          <div class="icard"><span class="icard__num">150+</span><span class="icard__label">Projects Delivered</span></div>
+          <div class="icard"><span class="icard__num">7+</span><span class="icard__label">Years of Craft</span></div>
+          <div class="icard"><span class="icard__num">98%</span><span class="icard__label">Client Retention</span></div>
+          <div class="icard"><span class="icard__num">40+</span><span class="icard__label">Industries Served</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SERVICES PREVIEW ═══ -->
+  <section class="services-preview section section--sand">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="label">What We Do</span>
+        <h2>Services that shape brands</h2>
+      </div>
+      <div class="sp-grid">
+        <a href="/services#design"    class="sp-card reveal" style="--d:.05s">
+          <div class="sp-card__icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 6h36v36H6z" stroke-linejoin="round"/><circle cx="18" cy="18" r="5"/><path d="M6 32l10-10 8 8 6-6 12 12" stroke-linejoin="round"/></svg></div>
+          <h3>Graphic Design</h3><p>Visuals that stop the scroll and embed themselves in memory.</p>
+          <span class="sp-card__arrow">→</span>
+        </a>
+        <a href="/services#web"       class="sp-card sp-card--featured reveal" style="--d:.1s">
+          <div class="sp-card__icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="4" y="8" width="40" height="28" rx="3"/><path d="M16 44h16M24 36v8" stroke-linecap="round"/><path d="M14 20l5 5-5 5M22 28h8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <h3>Web Development</h3><p>Fast, beautiful, accessible websites that perform as good as they look.</p>
+          <span class="sp-card__arrow">→</span>
+        </a>
+        <a href="/services#marketing" class="sp-card reveal" style="--d:.15s">
+          <div class="sp-card__icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M24 6C13.954 6 6 13.954 6 24s7.954 18 18 18" stroke-linecap="round"/><path d="M36 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/><path d="M42 12H30" stroke-linecap="round"/></svg></div>
+          <h3>Digital Marketing</h3><p>Data-driven campaigns that reach the right people at the right moment.</p>
+          <span class="sp-card__arrow">→</span>
+        </a>
+        <a href="/services#branding"  class="sp-card reveal" style="--d:.2s">
+          <div class="sp-card__icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="24,4 29,17 43,17 32,26 36,40 24,31 12,40 16,26 5,17 19,17"/></svg></div>
+          <h3>Brand Strategy</h3><p>Identity systems that speak your truth — clearly, consistently, powerfully.</p>
+          <span class="sp-card__arrow">→</span>
+        </a>
+      </div>
+      <div class="reveal" style="text-align:center;margin-top:3rem;--d:.25s">
+        <a href="/services" class="btn btn--outline">View All Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ MARQUEE ═══ -->
+  <div class="marquee-strip" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Graphic Design</span><span class="sep">✦</span>
+      <span>Web Development</span><span class="sep">✦</span>
+      <span>Brand Identity</span><span class="sep">✦</span>
+      <span>Digital Marketing</span><span class="sep">✦</span>
+      <span>Motion Design</span><span class="sep">✦</span>
+      <span>UI / UX</span><span class="sep">✦</span>
+      <span>SEO Strategy</span><span class="sep">✦</span>
+      <span>E-Commerce</span><span class="sep">✦</span>
+      <span>Graphic Design</span><span class="sep">✦</span>
+      <span>Web Development</span><span class="sep">✦</span>
+      <span>Brand Identity</span><span class="sep">✦</span>
+      <span>Digital Marketing</span><span class="sep">✦</span>
+      <span>Motion Design</span><span class="sep">✦</span>
+      <span>UI / UX</span><span class="sep">✦</span>
+      <span>SEO Strategy</span><span class="sep">✦</span>
+      <span>E-Commerce</span><span class="sep">✦</span>
+    </div>
+  </div>
+
+  <!-- ═══ CTA ═══ -->
+  <section class="home-cta section">
+    <div class="container">
+      <div class="home-cta__inner reveal">
+        <span class="label">Ready?</span>
+        <h2>Let's build something extraordinary together</h2>
+        <a href="/contact" class="btn btn--gold btn--lg">Start a Project</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="/js/hero.js"></script>
+<%- include('partials/footer') %>

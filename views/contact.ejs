@@ -1,0 +1,91 @@
+<%- include('partials/head') %>
+<%- include('partials/nav') %>
+<main>
+  <section class="contact-wrap">
+    <div class="contact-wrap__glow"></div>
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Info -->
+        <div class="reveal">
+          <span class="label">Let's Talk</span>
+          <h1 class="contact-info__title">Start your next big project with us</h1>
+          <p class="contact-info__sub">Tell us what you're building and we'll get back within one business day. No pressure — just a real conversation.</p>
+
+          <div class="c-details">
+            <div class="c-detail">
+              <div class="c-detail__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+              <div><span class="c-detail__lbl">Email</span><a href="mailto:info@zenexio.pro" class="c-detail__val">info@zenexio.pro</a></div>
+            </div>
+            <div class="c-detail">
+              <div class="c-detail__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.5a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.69h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.18 6.18l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+              <div><span class="c-detail__lbl">Phone</span><a href="tel:+971503848523" class="c-detail__val">+971 503 848523</a></div>
+            </div>
+          </div>
+
+          <div class="c-avail">
+            <div class="c-avail__dot"></div>
+            <span>Accepting new projects — Q3 2025</span>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div class="form-card reveal" style="--d:.14s">
+          <% if (success) { %>
+          <div class="form-success">
+            <div class="form-success__check">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <h3>Message received!</h3>
+            <p>We'll be in touch within one business day.</p>
+            <a href="/contact" class="btn btn--outline btn--sm" style="margin-top:1.5rem">Send another</a>
+          </div>
+          <% } else { %>
+          <form class="contact-form" method="POST" action="/contact" novalidate id="contact-form">
+            <% if (error) { %>
+            <div class="form-err-banner">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              <%- error %>
+            </div>
+            <% } %>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-lbl" for="name">Full Name <span class="form-req">*</span></label>
+                <input type="text" id="name" name="name" class="form-ctrl" placeholder="Jane Smith" required autocomplete="name"/>
+              </div>
+              <div class="form-group">
+                <label class="form-lbl" for="email">Email <span class="form-req">*</span></label>
+                <input type="email" id="email" name="email" class="form-ctrl" placeholder="jane@company.com" required autocomplete="email"/>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-lbl" for="service">Service of Interest</label>
+              <div class="sel-wrap">
+                <select id="service" name="service" class="form-ctrl">
+                  <option value="">Select a service…</option>
+                  <option>Graphic Design</option>
+                  <option>Web Development</option>
+                  <option>Digital Marketing</option>
+                  <option>Brand Strategy</option>
+                  <option>Multiple Services</option>
+                  <option>Not sure yet</option>
+                </select>
+                <svg class="sel-arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-lbl" for="message">Your Message <span class="form-req">*</span></label>
+              <textarea id="message" name="message" class="form-ctrl form-ta" rows="5" placeholder="Tell us about your project, timeline, and goals…" required></textarea>
+            </div>
+            <button type="submit" class="btn btn--gold btn--lg" style="width:100%;justify-content:center">
+              Send Message &nbsp;→
+            </button>
+          </form>
+          <% } %>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</main>
+<%- include('partials/footer') %>
