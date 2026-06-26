@@ -594,9 +594,15 @@
   window.addEventListener('resize', resizeCursorCanvas);
   resizeCursorCanvas();
 
+  /* hide default cursor site-wide */
+  const cursorStyle = document.createElement('style');
+  cursorStyle.textContent = '*{cursor:none!important}';
+  document.head.appendChild(cursorStyle);
+
   let cursorPulse = 0;
   function drawCursor() {
     cCtx.clearRect(0, 0, cursorCanvas.width, cursorCanvas.height);
+    requestAnimationFrame(drawCursor); // always keep loop alive
     if (!cursor.visible) return;
     const { x, y } = cursor;
     cursorPulse += 0.06;
@@ -632,12 +638,8 @@
     cCtx.fill();
 
     cCtx.restore();
-    requestAnimationFrame(drawCursor);
   }
   drawCursor();
-
-  /* hide default cursor site-wide for custom cursor */
-  document.documentElement.style.cursor = 'none';
 
   window.addEventListener('resize',resize,{passive:true});
   resize();
