@@ -504,6 +504,9 @@
         drawMoon(px+Math.cos(ma)*mr, py+Math.sin(ma)*mr*PERSP, PLANETS[idx].moon.sz);
       }
     });
+
+    checkHover(pPos);
+    drawTooltip();
   }
 
   /* ── loop ────────────────────────────────────────── */
@@ -514,6 +517,127 @@
     draw(now);
     requestAnimationFrame(loop);
   }
+
+  /* ── planet hover tooltip ────────────────────────── */
+  let mouse = { x: -9999, y: -9999 };
+  let tooltip = { name: '', x: 0, y: 0, alpha: 0, target: 0 };
+
+  canvas.addEventListener('mousemove', e => {
+    const rect = canvas.getBoundingClientRect();
+    mouse.x = e.clientX - rect.left;
+    mouse.y = e.clientY - rect.top;
+  });
+  canvas.addEventListener('mouseleave', () => { mouse.x = -9999; mouse.y = -9999; });
+
+  function checkHover(pPos) {
+    let hit = null;
+    for (const { px, py, idx } of pPos) {
+      const r = PLANETS[idx].sz * 1.8;
+      const dx = mouse.x - px, dy = mouse.y - py;
+      if (dx*dx + dy*dy < r*r) { hit = { name: PLANETS[idx].name, x: px, y: py - PLANETS[idx].sz - 10 }; break; }
+    }
+    if (hit) {
+      tooltip.name = hit.name;
+      tooltip.x = hit.x;
+      tooltip.y = hit.y;
+      tooltip.target = 1;
+    } else {
+      tooltip.target = 0;
+    }
+    tooltip.alpha += (tooltip.target - tooltip.alpha) * 0.12;
+  }
+
+  function drawTooltip() {
+    if (tooltip.alpha < 0.01) return;
+    ctx.save();
+    ctx.globalAlpha = tooltip.alpha;
+    ctx.font = 'bold 13px "Raleway", sans-serif';
+    ctx.textAlign = 'center';
+    const w = ctx.measureText(tooltip.name).width + 22;
+    const h = 26;
+    const tx = tooltip.x, ty = tooltip.y;
+    // pill background
+    const bg = ctx.createLinearGradient(tx - w/2, ty - h/2, tx + w/2, ty + h/2);
+    bg.addColorStop(0, 'rgba(20,15,5,0.88)');
+    bg.addColorStop(1, 'rgba(40,30,8,0.88)');
+    ctx.fillStyle = bg;
+    ctx.strokeStyle = 'rgba(212,175,55,0.7)';
+    ctx.lineWidth = 1;
+    ctx.beginPath();
+    ctx.roundRect(tx - w/2, ty - h, w, h, 6);
+    ctx.fill(); ctx.stroke();
+    // text
+    ctx.fillStyle = '#d4af37';
+    ctx.shadowColor = '#d4af37';
+    ctx.shadowBlur = 8;
+    ctx.fillText(tooltip.name, tx, ty - h/2 + 5);
+    ctx.restore();
+  }
+
+  /* ── custom cursor ───────────────────────────────── */
+  const cursor = { x: -9999, y: -9999, visible: false };
+  document.addEventListener('mousemove', e => {
+    cursor.x = e.clientX; cursor.y = e.clientY; cursor.visible = true;
+  });
+  document.addEventListener('mouseleave', () => { cursor.visible = false; });
+
+  /* overlay canvas for cursor (sits on top of everything) */
+  const cursorCanvas = document.createElement('canvas');
+  cursorCanvas.style.cssText = 'position:fixed;top:0;left:0;width:100vw;height:100vh;pointer-events:none;z-index:99999;';
+  document.body.appendChild(cursorCanvas);
+  const cCtx = cursorCanvas.getContext('2d');
+
+  function resizeCursorCanvas() {
+    cursorCanvas.width = window.innerWidth;
+    cursorCanvas.height = window.innerHeight;
+  }
+  window.addEventListener('resize', resizeCursorCanvas);
+  resizeCursorCanvas();
+
+  let cursorPulse = 0;
+  function drawCursor() {
+    cCtx.clearRect(0, 0, cursorCanvas.width, cursorCanvas.height);
+    if (!cursor.visible) return;
+    const { x, y } = cursor;
+    cursorPulse += 0.06;
+    const pulse = 0.7 + 0.3 * Math.sin(cursorPulse);
+    const gold = '#d4af37';
+
+    cCtx.save();
+    cCtx.shadowColor = gold;
+    cCtx.shadowBlur = 12 * pulse;
+    cCtx.strokeStyle = gold;
+    cCtx.globalAlpha = 0.9 * pulse;
+    cCtx.lineWidth = 1.5;
+
+    // outer circle
+    cCtx.beginPath();
+    cCtx.arc(x, y, 12, 0, Math.PI * 2);
+    cCtx.stroke();
+
+    // crosshair lines
+    const gap = 5, len = 8;
+    cCtx.beginPath();
+    cCtx.moveTo(x - gap - len, y); cCtx.lineTo(x - gap, y);
+    cCtx.moveTo(x + gap, y);       cCtx.lineTo(x + gap + len, y);
+    cCtx.moveTo(x, y - gap - len); cCtx.lineTo(x, y - gap);
+    cCtx.moveTo(x, y + gap);       cCtx.lineTo(x, y + gap + len);
+    cCtx.stroke();
+
+    // center dot
+    cCtx.globalAlpha = pulse;
+    cCtx.fillStyle = gold;
+    cCtx.beginPath();
+    cCtx.arc(x, y, 1.8, 0, Math.PI * 2);
+    cCtx.fill();
+
+    cCtx.restore();
+    requestAnimationFrame(drawCursor);
+  }
+  drawCursor();
+
+  /* hide default cursor site-wide for custom cursor */
+  document.documentElement.style.cursor = 'none';
 
   window.addEventListener('resize',resize,{passive:true});
   resize();
