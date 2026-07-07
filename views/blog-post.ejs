@@ -34,7 +34,7 @@
   <section class="section post-section">
     <div class="container post-container">
 
-      <div class="post-hero-img reveal" style="background-image:url('/images/blog/<%= post.image %>')"></div>
+      <img class="post-hero-img reveal" src="/images/blog/<%= post.image %>" alt="<%= post.imageAlt || post.title %>" loading="eager" />
 
       <article class="post-body reveal" style="--d:.06s">
         <p class="post-lede"><%= post.excerpt %></p>

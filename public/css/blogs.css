@@ -100,8 +100,8 @@
   width: 100%;
   aspect-ratio: 16/8;
   border-radius: var(--r-xl);
-  background-size: cover;
-  background-position: center;
+  object-fit: cover;
+  object-position: center;
   margin-bottom: 2.5rem;
   border: 1px solid var(--border);
 }
