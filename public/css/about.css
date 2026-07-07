@@ -27,7 +27,7 @@
   font-family:var(--font-disp);
   font-size:2.4rem;
   font-weight:900;
-  background:linear-gradient(135deg,#f5d37a,#d4af37);
+  background:linear-gradient(135deg,#8ecbf0,#3f8fe0);
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent;
   background-clip:text;
@@ -53,7 +53,7 @@
   top:-80px; left:50%; transform:translateX(-50%);
   width:500px; height:300px;
   border-radius:50%;
-  background:radial-gradient(circle,rgba(212,175,55,0.12),transparent 60%);
+  background:radial-gradient(circle,rgba(63,143,224,0.12),transparent 60%);
   pointer-events:none;
 }
 .mission-block blockquote {
@@ -85,44 +85,6 @@
 .mission-pillar h4 { font-size:1rem; margin-bottom:0.5rem; }
 .mission-pillar p  { font-size:0.85rem; }
 @media(max-width:700px){ .mission-pillars { grid-template-columns:1fr; } }
-
-/* Team */
-.team-grid {
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:1.5rem;
-}
-.team-card {
-  background:var(--surface);
-  border:1px solid var(--border);
-  border-radius:var(--r-lg);
-  padding:1.8rem;
-  display:flex;
-  gap:1.2rem;
-  align-items:flex-start;
-  transition:border-color 0.28s,transform 0.28s;
-}
-.team-card:hover { border-color:var(--border-2); transform:translateY(-4px); }
-.team-avatar {
-  width:60px; height:60px;
-  border-radius:50%;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-family:var(--font-disp);
-  font-weight:900;
-  font-size:1.1rem;
-  color:#0c0a06;
-  flex-shrink:0;
-}
-.team-avatar--1 { background:linear-gradient(135deg,#d4af37,#a07820); }
-.team-avatar--2 { background:linear-gradient(135deg,#c86820,#8b3a08); }
-.team-avatar--3 { background:linear-gradient(135deg,#8b5a00,#c8a020); }
-.team-avatar--4 { background:linear-gradient(135deg,#b04010,#d47030); }
-.team-info h3  { font-size:1.05rem; margin-bottom:0.2rem; }
-.team-role { display:block; font-size:0.7rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:var(--gold); margin-bottom:0.6rem; }
-.team-info p   { font-size:0.85rem; }
-@media(max-width:768px){ .team-grid { grid-template-columns:1fr; } }
 
 /* Values */
 .values-grid {

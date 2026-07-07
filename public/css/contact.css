@@ -8,7 +8,7 @@
 }
 .contact-wrap__glow {
   position:absolute; inset:0; pointer-events:none;
-  background:radial-gradient(ellipse 60% 60% at 60% 20%, rgba(212,175,55,0.1), transparent 70%);
+  background:radial-gradient(ellipse 60% 60% at 60% 20%, rgba(63,143,224,0.1), transparent 70%);
 }
 .contact-grid {
   display:grid;
@@ -85,7 +85,7 @@ a.c-detail__val:hover { color:var(--gold); }
   appearance:none;
 }
 .form-ctrl::placeholder { color:var(--text-3); }
-.form-ctrl:focus { border-color:var(--gold); background:var(--surface-2); box-shadow:0 0 0 3px rgba(212,175,55,0.12); }
+.form-ctrl:focus { border-color:var(--gold); background:var(--surface-2); box-shadow:0 0 0 3px rgba(63,143,224,0.12); }
 .form-ctrl.is-invalid { border-color:rgba(220,60,60,0.6)!important; box-shadow:0 0 0 3px rgba(220,60,60,0.1)!important; }
 .form-ta { resize:vertical; min-height:110px; }
 .sel-wrap { position:relative; }

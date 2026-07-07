@@ -16,82 +16,34 @@
   <section class="blogs-section section">
     <div class="container">
 
+      <% const featured = posts[0]; const rest = posts.slice(1); %>
+
       <article class="blog-featured reveal">
-        <div class="blog-featured__img">
-          <div class="blog-featured__img-inner" style="background:linear-gradient(135deg,#2d1a00,#8b5a00)">
-            <span class="blog-tag">Design</span>
+        <a href="/blogs/<%= featured.slug %>" class="blog-featured__img">
+          <div class="blog-featured__img-inner" style="background:linear-gradient(to bottom,rgba(10,8,3,.15),rgba(10,8,3,.6)),url('/images/blog/<%= featured.image %>');background-size:cover;background-position:center">
+            <span class="blog-tag"><%= featured.tag %></span>
           </div>
-        </div>
+        </a>
         <div class="blog-featured__body">
-          <span class="blog-meta">June 15, 2025 &nbsp;&middot;&nbsp; 8 min read</span>
-          <h2>The Art of First Impressions: Why Your Brand Visual Identity Is Its Most Powerful Asset</h2>
-          <p>In a world where attention spans are measured in milliseconds, your visual identity is the handshake before the handshake. We explore what it takes to create a brand identity that resonates instantly and endures over time.</p>
-          <a href="#" class="btn btn--gold">Read Article</a>
+          <span class="blog-meta"><%= featured.date %> &nbsp;&middot;&nbsp; <%= featured.readTime %></span>
+          <h2><a href="/blogs/<%= featured.slug %>"><%= featured.title %></a></h2>
+          <p><%= featured.excerpt %></p>
+          <a href="/blogs/<%= featured.slug %>" class="btn btn--gold">Read Article</a>
         </div>
       </article>
 
       <div class="blog-grid">
-
-        <article class="blog-card reveal" style="--d:.06s">
-          <div class="blog-card__img" style="background:linear-gradient(135deg,#0a1628,#1a3a6a)"><span class="blog-tag">Web Dev</span></div>
+        <% rest.forEach((p, i) => { %>
+        <article class="blog-card reveal" style="--d:<%= (i*0.06 + 0.06).toFixed(2) %>s">
+          <a href="/blogs/<%= p.slug %>" class="blog-card__img" style="background:linear-gradient(to bottom,rgba(10,8,3,.15),rgba(10,8,3,.6)),url('/images/blog/<%= p.image %>');background-size:cover;background-position:center"><span class="blog-tag"><%= p.tag %></span></a>
           <div class="blog-card__body">
-            <span class="blog-meta">Jun 8, 2025 &middot; 6 min read</span>
-            <h3>Performance-First Web Design: Speed as a Design Principle</h3>
-            <p>Why treating load time as a core design constraint produces better outcomes for users and business alike.</p>
-            <a href="#" class="blog-card__link">Read more &rarr;</a>
+            <span class="blog-meta"><%= p.date %> &middot; <%= p.readTime %></span>
+            <h3><a href="/blogs/<%= p.slug %>"><%= p.title %></a></h3>
+            <p><%= p.excerpt %></p>
+            <a href="/blogs/<%= p.slug %>" class="blog-card__link">Read more &rarr;</a>
           </div>
         </article>
-
-        <article class="blog-card reveal" style="--d:.12s">
-          <div class="blog-card__img" style="background:linear-gradient(135deg,#1a0a00,#6b2800)"><span class="blog-tag">Marketing</span></div>
-          <div class="blog-card__body">
-            <span class="blog-meta">May 29, 2025 &middot; 5 min read</span>
-            <h3>From Clicks to Conversions: Rethinking Your Digital Funnel</h3>
-            <p>Most digital funnels leak. A framework for auditing yours and fixing the biggest drop-off points.</p>
-            <a href="#" class="blog-card__link">Read more &rarr;</a>
-          </div>
-        </article>
-
-        <article class="blog-card reveal" style="--d:.18s">
-          <div class="blog-card__img" style="background:linear-gradient(135deg,#0f0a1e,#3d1a6e)"><span class="blog-tag">Branding</span></div>
-          <div class="blog-card__body">
-            <span class="blog-meta">May 20, 2025 &middot; 7 min read</span>
-            <h3>Colour Psychology in Branding: What Your Palette Says About You</h3>
-            <p>Colour is the silent language of your brand. A deep dive into what each hue communicates to your audience.</p>
-            <a href="#" class="blog-card__link">Read more &rarr;</a>
-          </div>
-        </article>
-
-        <article class="blog-card reveal" style="--d:.24s">
-          <div class="blog-card__img" style="background:linear-gradient(135deg,#0a1a0a,#1a5a20)"><span class="blog-tag">Design</span></div>
-          <div class="blog-card__body">
-            <span class="blog-meta">May 12, 2025 &middot; 4 min read</span>
-            <h3>The Grid Is Not a Prison: Embracing Intentional Layout Breaks</h3>
-            <p>When and how to deliberately break grid rules to create visual tension that commands attention.</p>
-            <a href="#" class="blog-card__link">Read more &rarr;</a>
-          </div>
-        </article>
-
-        <article class="blog-card reveal" style="--d:.30s">
-          <div class="blog-card__img" style="background:linear-gradient(135deg,#1a1400,#6a5200)"><span class="blog-tag">Strategy</span></div>
-          <div class="blog-card__body">
-            <span class="blog-meta">May 3, 2025 &middot; 9 min read</span>
-            <h3>Why Consistency Beats Creativity in Long-Term Brand Building</h3>
-            <p>Creative campaigns win awards. Consistent brands win markets. The case for discipline over novelty.</p>
-            <a href="#" class="blog-card__link">Read more &rarr;</a>
-          </div>
-        </article>
-
-        <article class="blog-card reveal" style="--d:.36s">
-          <div class="blog-card__img" style="background:linear-gradient(135deg,#001a1a,#006060)"><span class="blog-tag">Web Dev</span></div>
-          <div class="blog-card__body">
-            <span class="blog-meta">Apr 24, 2025 &middot; 5 min read</span>
-            <h3>Headless CMS in 2025: When It Makes Sense and When It Does Not</h3>
-            <p>A practical guide to deciding if a headless CMS is the right choice for your next web project.</p>
-            <a href="#" class="blog-card__link">Read more &rarr;</a>
-          </div>
-        </article>
-
+        <% }) %>
       </div>
     </div>
   </section>

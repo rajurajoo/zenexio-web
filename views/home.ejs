@@ -4,13 +4,18 @@
 <main>
   <!-- ═══════════════════════════════════ HERO ═══════════════════════════════════ -->
   <section class="hero" id="hero">
-    <canvas id="hero-canvas"></canvas>
+    <video class="hero__video" id="hero-video" autoplay muted playsinline>
+      <source src="/images/video-hero.mov" type="video/mp4">
+    </video>
+    <div class="hero__overlay"></div>
 
-    <!-- Title — upper-left, away from lighthouse centre -->
-    <div class="hero__title-wrap">
-      <p class="hero__eyebrow">Creative Agency</p>
-      <h1 class="hero__title">Design Beyond<br><em>Imagination</em></h1>
-      <a href="/contact" class="btn btn--gold hero__cta">Start a Project</a>
+    <!-- Title — aligned to the same container gutter as the logo -->
+    <div class="hero__inner container">
+      <div class="hero__title-wrap">
+        <p class="hero__eyebrow">Creative Agency</p>
+        <h1 class="hero__title">Design Beyond<br><em>Imagination</em></h1>
+        <a href="/contact" class="btn btn--gold hero__cta">Start a Project</a>
+      </div>
     </div>
 
     <!-- Scroll hint -->
@@ -31,7 +36,7 @@
           <a href="/about" class="btn btn--gold">Discover Our Story</a>
         </div>
         <div class="intro__cards reveal" style="--d:.12s">
-          <div class="icard"><span class="icard__num">150+</span><span class="icard__label">Projects Delivered</span></div>
+          <div class="icard"><span class="icard__num">500+</span><span class="icard__label">Projects Delivered</span></div>
           <div class="icard"><span class="icard__num">7+</span><span class="icard__label">Years of Craft</span></div>
           <div class="icard"><span class="icard__num">98%</span><span class="icard__label">Client Retention</span></div>
           <div class="icard"><span class="icard__num">40+</span><span class="icard__label">Industries Served</span></div>
@@ -109,5 +114,5 @@
   </section>
 </main>
 
-<script src="/js/hero.js"></script>
+<script src="/js/hero-video.js"></script>
 <%- include('partials/footer') %>
