@@ -156,6 +156,24 @@
 .icard__label { display:block; font-size:.72rem; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--text-3); margin-top:.4rem; }
 @media(max-width:768px) { .intro__grid { grid-template-columns:1fr; } }
 
+/* Why choose us */
+.why-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:1.2rem; }
+.why-card {
+  background:var(--surface); border:1px solid var(--border); border-radius:var(--r-lg);
+  padding:1.8rem 1.5rem; text-align:center;
+  transition:border-color .28s,transform .28s,box-shadow .28s;
+}
+.why-card:hover { border-color:var(--border-2); transform:translateY(-5px); box-shadow:0 8px 30px rgba(63,143,224,.15); }
+.why-card__icon {
+  width:48px; height:48px; margin-inline:auto; color:var(--gold); background:var(--gold-dim);
+  border-radius:var(--r-md); display:flex; align-items:center; justify-content:center; padding:10px; margin-bottom:1rem;
+}
+.why-card__icon svg { width:100%; height:100%; }
+.why-card h3 { font-size:1rem; margin-bottom:.5rem; }
+.why-card p { font-size:.85rem; }
+@media(max-width:900px) { .why-grid { grid-template-columns:1fr 1fr; } }
+@media(max-width:540px) { .why-grid { grid-template-columns:1fr; } }
+
 /* Services preview */
 .sp-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:1.2rem; }
 .sp-card {
@@ -177,12 +195,3 @@
 .sp-card:hover .sp-card__arrow { transform:translateX(5px); }
 @media(max-width:900px) { .sp-grid { grid-template-columns:1fr 1fr; } }
 @media(max-width:540px) { .sp-grid { grid-template-columns:1fr; } }
-
-/* CTA band */
-.home-cta__inner {
-  background:var(--surface); border:1px solid var(--border-2); border-radius:var(--r-xl);
-  padding:clamp(3rem,6vw,5rem); text-align:center; position:relative; overflow:hidden;
-}
-.home-cta__inner::before { content:''; position:absolute; top:-120px; left:50%; transform:translateX(-50%); width:400px; height:400px; border-radius:50%; background:radial-gradient(circle,rgba(63,143,224,.18),transparent 60%); pointer-events:none; }
-.home-cta__inner .label { margin-bottom:.8rem; }
-.home-cta__inner h2 { font-size:clamp(1.8rem,3vw,2.8rem); margin-bottom:2rem; }

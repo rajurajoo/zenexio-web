@@ -160,10 +160,45 @@
 
   <section class="section">
     <div class="container">
-      <div class="home-cta__inner reveal">
-        <span class="label">Let's get started</span>
-        <h2>Which service does your brand need most?</h2>
-        <a href="/contact" class="btn btn--gold btn--lg" style="margin-top:1rem">Book a Free Consultation</a>
+      <div class="quick-quote reveal">
+        <div class="quick-quote__text">
+          <span class="label">Let's get started</span>
+          <h2>Which service does your brand need most?</h2>
+          <p>Tell us your name, email, and what you need — we'll follow up within one business day with next steps. No long forms, no pressure.</p>
+          <div class="trust-strip" style="justify-content:flex-start">
+            <span><strong>500+</strong> Projects Delivered</span>
+            <span class="trust-sep">·</span>
+            <span><strong>98%</strong> Client Retention</span>
+            <span class="trust-sep">·</span>
+            <span>Dubai, UAE &amp; India</span>
+          </div>
+        </div>
+        <form class="quick-quote__form" method="POST" action="/contact">
+          <div class="form-group">
+            <label class="form-lbl" for="qq-name">Full Name <span class="form-req">*</span></label>
+            <input type="text" id="qq-name" name="name" class="form-ctrl" placeholder="Jane Smith" required autocomplete="name"/>
+          </div>
+          <div class="form-group">
+            <label class="form-lbl" for="qq-email">Email <span class="form-req">*</span></label>
+            <input type="email" id="qq-email" name="email" class="form-ctrl" placeholder="jane@company.com" required autocomplete="email"/>
+          </div>
+          <div class="form-group">
+            <label class="form-lbl" for="qq-service">Service of Interest</label>
+            <div class="sel-wrap">
+              <select id="qq-service" name="service" class="form-ctrl">
+                <option value="">Select a service…</option>
+                <option>Graphic Design</option>
+                <option>Web Development</option>
+                <option>Digital Marketing</option>
+                <option>Brand Strategy</option>
+                <option>Multiple Services</option>
+                <option>Not sure yet</option>
+              </select>
+              <svg class="sel-arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </div>
+          </div>
+          <button type="submit" class="btn btn--gold btn--lg" style="width:100%;justify-content:center">Get a Free Quote &nbsp;→</button>
+        </form>
       </div>
     </div>
   </section>

@@ -84,7 +84,7 @@ app.get('/contact', (req, res) => res.render('contact',  { page: 'contact',  tit
 app.post('/contact', (req, res) => {
   const { name, email, message, service } = req.body;
 
-  if (!name || !email || !message) {
+  if (!name || !email) {
     return res.render('contact', { page: 'contact', title: seo.contact.title, description: seo.contact.description, keywords: seo.contact.keywords, success: false, error: 'Please fill in all required fields.' });
   }
 
@@ -93,7 +93,7 @@ app.post('/contact', (req, res) => {
     return res.render('contact', { page: 'contact', title: seo.contact.title, description: seo.contact.description, keywords: seo.contact.keywords, success: false, error: 'Please enter a valid email address.' });
   }
 
-  const submission = { name, email, message, service: service || 'Not specified', timestamp: new Date().toISOString() };
+  const submission = { name, email, message: message || 'No message provided — quick quote request.', service: service || 'Not specified', timestamp: new Date().toISOString() };
 
   try {
     const submissions = fs.existsSync(dataFile) ? JSON.parse(fs.readFileSync(dataFile, 'utf8')) : [];
