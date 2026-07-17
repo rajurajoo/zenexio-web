@@ -46,7 +46,8 @@
   gap: 0.7rem;
   max-width: 460px;
 }
-.hero__title-wrap .btn { pointer-events: all; align-self: flex-start; }
+.hero__title-wrap .btn { pointer-events: all; }
+.hero__cta-wrap { align-self: flex-start; }
 
 .hero__eyebrow {
   font-family: var(--font-body);
