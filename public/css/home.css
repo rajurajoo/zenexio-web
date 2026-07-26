@@ -12,6 +12,15 @@
   background: #03020e;
 }
 
+/* ── SLIDES (crossfading backgrounds) ─────────────── */
+.hero__slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  z-index: 0;
+  transition: opacity 1.4s ease;
+}
+.hero__slide.active { opacity: 1; z-index: 1; }
 .hero__video {
   position: absolute;
   inset: 0;
@@ -19,35 +28,73 @@
   height: 100%;
   object-fit: cover;
   display: block;
-  opacity: 1;
-  transition: opacity 0.9s ease;
 }
-.hero__video.is-fading { opacity: 0; }
 
 .hero__overlay {
   position: absolute;
   inset: 0;
   background: linear-gradient(90deg, rgba(3,2,14,0.75) 0%, rgba(3,2,14,0.45) 45%, rgba(3,2,14,0.25) 100%);
-  z-index: 1;
+  z-index: 2;
 }
 
-/* ── TITLE — aligned to the same gutter as the nav logo ──── */
+/* ── TITLE — each slide's text fills the hero, aligned internally ── */
 .hero__inner {
   position: absolute;
   inset: 0;
   z-index: 10;
-  display: flex;
-  align-items: center;
   pointer-events: none;
 }
 .hero__title-wrap {
+  position: absolute;
+  inset: 0;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   gap: 0.7rem;
-  max-width: 460px;
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.9s ease, transform 0.9s ease;
+  pointer-events: none;
+}
+.hero__title-wrap > * { max-width: 460px; }
+.hero__title-wrap.active {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+  transition-delay: 0.4s;
+}
+.hero__title-wrap--right {
+  align-items: flex-end;
+  text-align: right;
+}
+.hero__body {
+  color: rgba(232,242,255,0.75);
+  font-size: 0.95rem;
+  max-width: 42ch;
 }
 .hero__title-wrap .btn { pointer-events: all; }
-.hero__cta-wrap { align-self: flex-start; }
+
+/* ── SLIDE DOTS ───────────────────────────────────── */
+.hero__dots {
+  position: absolute;
+  bottom: 2.6rem;
+  right: clamp(1.5rem, 5vw, 5rem);
+  z-index: 10;
+  display: flex;
+  gap: 0.6rem;
+}
+.hero__dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: rgba(232,242,255,0.3);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.28s, transform 0.28s;
+}
+.hero__dot:hover { background: rgba(232,242,255,0.6); }
+.hero__dot.active { background: #63a8ee; transform: scale(1.3); }
 
 .hero__eyebrow {
   font-family: var(--font-body);

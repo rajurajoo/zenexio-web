@@ -1,0 +1,191 @@
+import Link from 'next/link';
+import Reveal from '../../components/Reveal';
+import PageBanner from '../../components/PageBanner';
+import ContactForm from '../../components/ContactForm';
+import { seo, buildMetadata } from '../../lib/seo';
+
+export const metadata = buildMetadata({
+  title: seo.services.title,
+  description: seo.services.description,
+  keywords: seo.services.keywords,
+  path: '/services'
+});
+
+export default function ServicesPage() {
+  return (
+    <>
+    <link rel="stylesheet" href="/css/services.css" />
+    <main>
+      <PageBanner label="What We Offer" title={<h1>Services Built for Modern Brands</h1>}>
+        <p>Three core disciplines. One unified team. Unlimited potential for your brand&apos;s growth.</p>
+      </PageBanner>
+
+      {/* Graphic Design */}
+      <section className="service-block section" id="design">
+        <div className="container">
+          <div className="svc-grid">
+            <Reveal className="svc-text">
+              <span className="label">01 — Graphic Design</span>
+              <h2>Visuals that stop the scroll and stick in memory</h2>
+              <p>Great design is the difference between being noticed and being remembered. Our design team blends strategic thinking with artistic craft to create visuals that are unmistakably yours.</p>
+              <p>Whether you need a brand built from the ground up or a refresh that breathes new life into an existing identity, we deliver work that resonates across every touchpoint.</p>
+              <Link href="/contact" className="btn btn--gold">Get a Design Quote</Link>
+            </Reveal>
+            <Reveal className="svc-feats" delay={0.12}>
+              <div className="feat-item">
+                <div className="feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" /></svg></div>
+                <div><h4>Brand Identity &amp; Logo</h4><p>Complete visual systems — logo, palette, typography, and brand guidelines that work everywhere.</p></div>
+              </div>
+              <div className="feat-item">
+                <div className="feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="3" y="3" width="18" height="18" rx="2" /><path d="M3 9h18M9 21V9" /></svg></div>
+                <div><h4>Marketing Collateral</h4><p>Brochures, presentations, social templates — consistent and premium at every touchpoint.</p></div>
+              </div>
+              <div className="feat-item">
+                <div className="feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10" /><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" /></svg></div>
+                <div><h4>UI / UX Design</h4><p>User-centered interface design backed by research and tested for clarity and delight.</p></div>
+              </div>
+              <div className="feat-item">
+                <div className="feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M15 10l4.553-2.069A1 1 0 0 1 21 8.845v6.31a1 1 0 0 1-1.447.914L15 14M3 8a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8z" /></svg></div>
+                <div><h4>Motion &amp; Animation</h4><p>Animated logos, explainer videos, and motion graphics that bring your brand story to life.</p></div>
+              </div>
+            </Reveal>
+          </div>
+        </div>
+      </section>
+
+      {/* Web Development */}
+      <section className="service-block service-block--alt section" id="web">
+        <div className="container">
+          <div className="svc-grid svc-grid--rev">
+            <Reveal className="svc-text">
+              <span className="label">02 — Web Development</span>
+              <h2>Websites that perform as good as they look</h2>
+              <p>We build websites and web applications with a focus on speed, accessibility, and scalability. Every line of code is purposeful — no bloat, no shortcuts.</p>
+              <p>From marketing sites to complex e-commerce platforms, we use the right technology for the job and ensure every project is built to grow with you.</p>
+              <Link href="/contact" className="btn btn--gold">Start Your Build</Link>
+            </Reveal>
+            <Reveal className="svc-feats" delay={0.12}>
+              <div className="feat-item">
+                <div className="feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polyline points="16 18 22 12 16 6" /><polyline points="8 6 2 12 8 18" /></svg></div>
+                <div><h4>Custom Website Development</h4><p>Bespoke websites built from scratch — no page-builder limitations, full flexibility.</p></div>
+              </div>
+              <div className="feat-item">
+                <div className="feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4zM3 6h18" /><path d="M16 10a4 4 0 0 1-8 0" /></svg></div>
+                <div><h4>E-Commerce Solutions</h4><p>Seamless shopping experiences with secure payments and conversion-optimised flows.</p></div>
+              </div>
+              <div className="feat-item">
+                <div className="feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z" /><polyline points="13 2 13 9 20 9" /></svg></div>
+                <div><h4>CMS Integration</h4><p>Headless CMS solutions and custom admin panels that make content updates effortless.</p></div>
+              </div>
+              <div className="feat-item">
+                <div className="feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /></svg></div>
+                <div><h4>Performance &amp; Security</h4><p>Core Web Vitals optimisation, HTTPS, regular audits — fast and secure by design.</p></div>
+              </div>
+            </Reveal>
+          </div>
+        </div>
+      </section>
+
+      {/* Digital Marketing */}
+      <section className="service-block section" id="marketing">
+        <div className="container">
+          <div className="svc-grid">
+            <Reveal className="svc-text">
+              <span className="label">03 — Digital Marketing</span>
+              <h2>Data-driven growth that actually works</h2>
+              <p>Marketing without measurement is guessing. We build campaigns anchored in data and tuned for performance — continuously optimised to maximise your return.</p>
+              <p>From search to social, paid to organic, we connect you with the right audiences at the right time with the right message.</p>
+              <Link href="/contact" className="btn btn--gold">Grow My Brand</Link>
+            </Reveal>
+            <Reveal className="svc-feats" delay={0.12}>
+              <div className="feat-item">
+                <div className="feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="11" cy="11" r="8" /><line x1="21" y1="21" x2="16.65" y2="16.65" /></svg></div>
+                <div><h4>SEO &amp; Content Strategy</h4><p>Technical SEO and content that ranks — driving qualified organic traffic to your site.</p></div>
+              </div>
+              <div className="feat-item">
+                <div className="feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2" /></svg></div>
+                <div><h4>Paid Advertising (PPC)</h4><p>Google and Meta campaigns built for maximum ROAS — precise targeting, continuous A/B testing.</p></div>
+              </div>
+              <div className="feat-item">
+                <div className="feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" /></svg></div>
+                <div><h4>Social Media Management</h4><p>Platform-native content strategy, community management, and analytics reporting.</p></div>
+              </div>
+              <div className="feat-item">
+                <div className="feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12" /></svg></div>
+                <div><h4>Analytics &amp; Reporting</h4><p>Custom dashboards and monthly reviews so you always know exactly what&apos;s working.</p></div>
+              </div>
+            </Reveal>
+          </div>
+        </div>
+      </section>
+
+      {/* Brand Strategy */}
+      <section className="service-block service-block--alt section" id="branding">
+        <div className="container">
+          <div className="svc-grid svc-grid--rev">
+            <Reveal className="svc-text">
+              <span className="label">04 — Brand Strategy</span>
+              <h2>Identity systems that speak your truth</h2>
+              <p>A brand is more than a logo — it&apos;s a promise. We help you define, articulate, and express that promise with consistency and conviction across every channel.</p>
+              <Link href="/contact" className="btn btn--gold">Build My Brand</Link>
+            </Reveal>
+            <Reveal className="svc-feats" delay={0.12}>
+              <div className="feat-item">
+                <div className="feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg></div>
+                <div><h4>Brand Positioning</h4><p>Defining your unique space in the market — what you stand for and who you&apos;re for.</p></div>
+              </div>
+              <div className="feat-item">
+                <div className="feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" /></svg></div>
+                <div><h4>Brand Voice &amp; Messaging</h4><p>Tone, language, and messaging frameworks that make your brand unmistakable in copy.</p></div>
+              </div>
+              <div className="feat-item">
+                <div className="feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="2" y="3" width="20" height="14" rx="2" /><path d="M8 21h8M12 17v4" /></svg></div>
+                <div><h4>Brand Guidelines</h4><p>Comprehensive documentation ensuring your brand stays consistent across every team and touchpoint.</p></div>
+              </div>
+            </Reveal>
+          </div>
+        </div>
+      </section>
+
+      {/* Process */}
+      <section className="section" style={{ background: 'var(--bg-2)' }}>
+        <div className="container">
+          <Reveal as="div" className="section-head">
+            <span className="label">How We Work</span>
+            <h2>Our process, your peace of mind</h2>
+          </Reveal>
+          <div className="process-row">
+            <Reveal as="div" className="proc-step" delay={0.05}><div className="proc-num">01</div><h3>Discover</h3><p>Goals, audience, competitive landscape — before a single line is drawn.</p></Reveal>
+            <div className="proc-conn"></div>
+            <Reveal as="div" className="proc-step" delay={0.1}><div className="proc-num">02</div><h3>Strategise</h3><p>A clear roadmap with milestones, deliverables, and agreed success metrics.</p></Reveal>
+            <div className="proc-conn"></div>
+            <Reveal as="div" className="proc-step" delay={0.15}><div className="proc-num">03</div><h3>Create</h3><p>Designing, building, refining — with your feedback at every checkpoint.</p></Reveal>
+            <div className="proc-conn"></div>
+            <Reveal as="div" className="proc-step" delay={0.2}><div className="proc-num">04</div><h3>Launch &amp; Grow</h3><p>We ship, measure, and iterate. Launch is the beginning, not the end.</p></Reveal>
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container">
+          <Reveal className="quick-quote">
+            <div className="quick-quote__text">
+              <span className="label">Let&apos;s get started</span>
+              <h2>Which service does your brand need most?</h2>
+              <p>Tell us your name, email, and what you need — we&apos;ll follow up within one business day with next steps. No long forms, no pressure.</p>
+              <div className="trust-strip" style={{ justifyContent: 'flex-start' }}>
+                <span><strong>500+</strong> Projects Delivered</span>
+                <span className="trust-sep">·</span>
+                <span><strong>98%</strong> Client Retention</span>
+                <span className="trust-sep">·</span>
+                <span>Dubai, UAE &amp; India</span>
+              </div>
+            </div>
+            <ContactForm variant="quick" />
+          </Reveal>
+        </div>
+      </section>
+    </main>
+  </>
+  );
+}
