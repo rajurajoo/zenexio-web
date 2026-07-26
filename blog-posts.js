@@ -31,7 +31,8 @@ const posts = [
       { h2: 'Questions Worth Asking Before You Commit' },
       { p: 'Ask exactly what is included in the price — number of concepts, number of revision rounds, and file formats delivered. Ask whether brand strategy is included or treated as a separate, billable step. Ask who owns the final files and whether usage rights are unlimited or restricted. And ask for two or three examples of work delivered for businesses of a similar size to yours — not just the agency\'s flagship, biggest-name project.' },
       { h2: 'How Zenexio Prices Design Work in Dubai' },
-      { p: 'Zenexio is a full-service creative agency operating across Dubai, the UAE, and India, and we price graphic design work based on actual project scope rather than one-size-fits-all packages. That approach is precisely what makes it possible to stay affordable for growing businesses without resorting to templates, unlicensed assets, or restrictive file ownership. If you are comparing affordable graphic design companies in Dubai, the conversation and a scoped quote cost nothing — reach out and tell us what you are building.' }
+      { p: 'Zenexio is a full-service creative agency operating across Dubai, the UAE, and India, and we price graphic design work based on actual project scope rather than one-size-fits-all packages. That approach is precisely what makes it possible to stay affordable for growing businesses without resorting to templates, unlicensed assets, or restrictive file ownership. If you are comparing affordable graphic design companies in Dubai, the conversation and a scoped quote cost nothing — reach out and tell us what you are building.' },
+      { p: 'Also useful: our free <a href="/resources/brand-launch-checklist-dubai">Brand &amp; Website Launch Checklist for Dubai, UAE &amp; India Startups</a> — it covers exactly what to lock down before you brief a design agency.' }
     ]
   },
   {
@@ -60,7 +61,8 @@ const posts = [
       { p: 'Be cautious of any Dubai-based agency quoting a fixed low price for "full branding" without a discovery phase — brand strategy cannot be templated without understanding your business first. Be equally cautious of vague reporting promises from a digital marketing agency; if an agency cannot describe exactly which metrics they will report on and how often, assume they will not report consistently once the contract is signed.' },
       { h2: 'What Working With Zenexio Looks Like' },
       { p: 'Zenexio is a full-service creative agency delivering brand identity, web development, and digital marketing for clients across Dubai, the UAE, and India — 500+ projects and counting. Every engagement starts with strategy, not templates, and every deliverable is built to work across both markets from day one when a client needs it to.' },
-      { p: 'If you are evaluating creative agencies in Dubai or India for an upcoming project, the conversation costs nothing and the clarity is usually worth more than the pitch deck. Reach out and tell us what you are building.' }
+      { p: 'If you are evaluating creative agencies in Dubai or India for an upcoming project, the conversation costs nothing and the clarity is usually worth more than the pitch deck. Reach out and tell us what you are building.' },
+      { p: 'Starting from scratch? Our free <a href="/resources/brand-launch-checklist-dubai">Brand &amp; Website Launch Checklist for Dubai, UAE &amp; India Startups</a> walks through everything to lock down before you brief any agency.' }
     ]
   },
   {

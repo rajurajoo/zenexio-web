@@ -2,6 +2,7 @@ const express = require('express');
 const path = require('path');
 const fs = require('fs');
 const { getAllPosts, getPostBySlug, getRelatedPosts } = require('./blog-posts');
+const resourceChecklist = require('./resource-checklist');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -76,6 +77,17 @@ app.get('/blogs/:slug', (req, res) => {
     canonicalPath: '/blogs/' + post.slug,
     ogType: 'article',
     ogImage: 'https://www.zenexio.pro/images/blog/' + post.image
+  });
+});
+
+app.get('/resources/brand-launch-checklist-dubai', (req, res) => {
+  res.render('resource-checklist', {
+    page: 'blogs',
+    title: resourceChecklist.seo.title,
+    description: resourceChecklist.seo.description,
+    keywords: resourceChecklist.seo.keywords,
+    checklist: resourceChecklist.checklist,
+    canonicalPath: '/resources/brand-launch-checklist-dubai'
   });
 });
 

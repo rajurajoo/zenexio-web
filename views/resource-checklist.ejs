@@ -1,0 +1,73 @@
+<%- include('partials/head') %>
+<%- include('partials/nav') %>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "The Complete Brand & Website Launch Checklist for Dubai, UAE & India Startups",
+  "description": "<%= description %>",
+  "datePublished": "2026-07-07T00:00:00.000Z",
+  "author": { "@type": "Organization", "name": "Zenexio" },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Zenexio",
+    "logo": { "@type": "ImageObject", "url": "https://www.zenexio.pro/images/zen-wordmark.png" }
+  },
+  "mainEntityOfPage": "https://www.zenexio.pro/resources/brand-launch-checklist-dubai"
+}
+</script>
+
+<main>
+  <section class="page-banner post-banner">
+    <div class="page-banner__bg"></div>
+    <div class="container">
+      <div class="page-banner__content reveal">
+        <span class="label">Free Resource</span>
+        <h1>The Complete Brand &amp; Website Launch Checklist for Dubai, UAE &amp; India Startups</h1>
+        <p>A practical, no-fluff checklist covering brand foundations, visual identity, website launch, business basics, marketing, and SEO — built for founders launching in the UAE or India.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section post-section">
+    <div class="container post-container">
+      <article class="post-body reveal">
+        <p class="post-lede">Bookmark this page, share it with your co-founder, or link to it from your own resource list — it's free to use. Every item below is something we've seen founders skip, then have to fix later at a higher cost than doing it right the first time.</p>
+
+        <% checklist.forEach(section => { %>
+          <h2><%= section.title %></h2>
+          <% if (section.intro) { %><p><%= section.intro %></p><% } %>
+          <ul class="check-list">
+            <% section.items.forEach(item => { %>
+              <li class="check-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span><%- item %></span>
+              </li>
+            <% }) %>
+          </ul>
+        <% }) %>
+
+        <h2>A Note on Business &amp; Legal Basics</h2>
+        <p>The checklist above covers what we know well — brand, design, web, and marketing. For trade licenses, free zone vs. mainland registration, and other UAE or India business-formation specifics, always confirm current requirements with a licensed corporate services provider or legal advisor, since rules and costs vary by emirate, free zone, and business activity.</p>
+      </article>
+
+      <div class="post-cta reveal" style="--d:.1s">
+        <span class="label">Ready to Launch?</span>
+        <h2>Let Zenexio handle the brand, website, and marketing side</h2>
+        <a href="/contact" class="btn btn--gold btn--lg">Get a Free Quote</a>
+        <div class="trust-strip">
+          <span><strong>500+</strong> Projects Delivered</span>
+          <span class="trust-sep">·</span>
+          <span><strong>98%</strong> Client Retention</span>
+          <span class="trust-sep">·</span>
+          <span>Dubai, UAE &amp; India</span>
+        </div>
+      </div>
+
+      <a href="/blogs" class="post-back reveal" style="--d:.18s">&larr; Back to the blog</a>
+    </div>
+  </section>
+</main>
+
+<%- include('partials/footer') %>
