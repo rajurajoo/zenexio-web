@@ -316,16 +316,49 @@ h1,h2,h3,h4,h5 {
   position: relative;
   overflow: hidden;
   text-align: center;
+  background: #060a14;
 }
 .page-banner__bg {
   position: absolute; inset: 0;
   background:
+    linear-gradient(160deg, #0a1730 0%, #060a14 55%),
     radial-gradient(ellipse 70% 70% at 50% 0%, rgba(63,143,224,0.18), transparent 70%),
-    radial-gradient(circle at 14% 25%, rgba(94,180,255,0.12), transparent 45%),
-    radial-gradient(circle at 88% 15%, rgba(60,120,220,0.14), transparent 42%),
-    radial-gradient(circle at 50% 100%, rgba(28,77,130,0.25), transparent 60%);
+    radial-gradient(circle at 88% 15%, rgba(120,90,224,0.14), transparent 42%);
   pointer-events: none;
   overflow: hidden;
+}
+.page-banner__bg::before, .page-banner__bg::after { z-index: 1; }
+.page-banner__orb {
+  position: absolute;
+  top: 50%;
+  right: clamp(-40px, 4vw, 60px);
+  transform: translateY(-50%);
+  z-index: 0;
+  pointer-events: none;
+}
+.page-banner__ring {
+  position: absolute;
+  top: 50%; left: 50%;
+  width: 220px; height: 220px;
+  margin: -110px 0 0 -110px;
+  border: 1px solid rgba(142,203,240,0.22);
+  border-radius: 50%;
+  animation: bannerSpin 60s linear infinite;
+}
+.page-banner__core {
+  display: block;
+  width: 90px; height: 90px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #aad6ff, #63a8ee 45%, #1c4d82 80%, transparent 100%);
+  box-shadow: 0 0 60px rgba(99,168,238,0.4);
+  animation: holoFloat 6s ease-in-out infinite;
+}
+.page-banner__rule {
+  display: inline-block;
+  width: 40px;
+  height: 1px;
+  background: var(--gold);
+  margin-bottom: 1rem;
 }
 .page-banner__bg::before {
   content: '';
@@ -362,12 +395,19 @@ h1,h2,h3,h4,h5 {
   from { transform: rotate(0deg); }
   to   { transform: rotate(360deg); }
 }
+@keyframes holoFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-14px); }
+}
 .page-banner__content { position: relative; }
 .page-banner h1 {
   font-size: clamp(2.5rem, 5vw, 4rem);
   margin-block: 0.5rem 1rem;
 }
 .page-banner p { max-width: 52ch; margin-inline: auto; }
+@media (max-width: 900px) {
+  .page-banner__orb { display: none; }
+}
 
 /* ─── MARQUEE ───────────────────────────────────── */
 .marquee-strip {
