@@ -2,12 +2,16 @@
 
 import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
+import dynamic from 'next/dynamic';
+
+const Hero3D = dynamic(() => import('./Hero3D'), { ssr: false });
 
 const SLIDES = [
   {
     eyebrow: 'Creative Agency',
     titleWhite: 'Design',
     titleAccent: 'Beyond',
+    accent: 'blue',
     body: 'Full-service branding, web, and marketing — built on strategy, delivered with craft.',
     cta: { label: 'Start a Project', href: '/contact' }
   },
@@ -15,6 +19,7 @@ const SLIDES = [
     eyebrow: 'Strategy Meets Artistry',
     titleWhite: 'Brands That',
     titleAccent: 'Move',
+    accent: 'violet',
     body: 'From identity to launch, every project is built on strategy first — design that works as hard as it looks.',
     cta: { label: 'See Our Work', href: '/services' }
   },
@@ -22,6 +27,7 @@ const SLIDES = [
     eyebrow: 'Dubai · UAE · India',
     titleWhite: 'Design',
     titleAccent: 'Unbound',
+    accent: 'pink',
     body: 'Teams that understand Dubai, the UAE, and India natively — 500+ projects delivered across both markets.',
     cta: { label: 'Meet The Team', href: '/about' }
   },
@@ -29,6 +35,7 @@ const SLIDES = [
     eyebrow: 'Let’s Talk',
     titleWhite: 'Ready to',
     titleAccent: 'Begin',
+    accent: 'amber',
     body: 'Transparent pricing, real replies, and work you fully own — every time.',
     cta: { label: 'Get a Quote', href: '/contact' }
   }
@@ -58,7 +65,7 @@ export default function HeroHolo() {
   const slide = SLIDES[active];
 
   return (
-    <section className="holo" id="hero">
+    <section className={'holo holo--' + slide.accent} id="hero">
       <div className="holo__bg-panels" aria-hidden="true">
         <span className="holo__panel holo__panel--a"></span>
         <span className="holo__panel holo__panel--b"></span>
@@ -81,18 +88,15 @@ export default function HeroHolo() {
         </nav>
       </div>
 
-      {/* centerpiece */}
+      {/* 3D centerpiece */}
       <div className="holo__orb-wrap" aria-hidden="true">
         <div className="holo__rings">
           <span className="holo__ring holo__ring--1"></span>
           <span className="holo__ring holo__ring--2"></span>
           <span className="holo__ring holo__ring--3"></span>
         </div>
-        <div className="holo__orb">
-          <span className="holo__orb-core"></span>
-          <span className="holo__orb-wire holo__orb-wire--1"></span>
-          <span className="holo__orb-wire holo__orb-wire--2"></span>
-          <span className="holo__orb-wire holo__orb-wire--3"></span>
+        <div className="holo__canvas-wrap">
+          <Hero3D colorIndex={active} />
         </div>
         <div className="holo__glow"></div>
       </div>
