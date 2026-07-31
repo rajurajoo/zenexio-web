@@ -1,6 +1,7 @@
 import Reveal from './Reveal';
+import Breadcrumbs from './Breadcrumbs';
 
-export default function PageBanner({ label, title, children, className = '' }) {
+export default function PageBanner({ label, title, children, className = '', breadcrumbs }) {
   return (
     <section className={'page-banner ' + className}>
       <div className="page-banner__bg"></div>
@@ -9,6 +10,7 @@ export default function PageBanner({ label, title, children, className = '' }) {
         <span className="page-banner__core"></span>
       </div>
       <div className="container">
+        {breadcrumbs && <Breadcrumbs items={breadcrumbs} />}
         <Reveal className="page-banner__content">
           <span className="page-banner__rule" aria-hidden="true"></span>
           <span className="label">{label}</span>

@@ -20,6 +20,7 @@ export default function BadgePage() {
         label="Free Snippet"
         className="post-banner"
         title={<h1>Free Website Credit Badge</h1>}
+        breadcrumbs={[{ label: 'Home', href: '/' }, { label: 'Resources' }, { label: 'Website Credit Badge' }]}
       >
         <p>A tiny, self-contained footer credit snippet — copy the code, paste it into your site&apos;s footer, done.</p>
       </PageBanner>

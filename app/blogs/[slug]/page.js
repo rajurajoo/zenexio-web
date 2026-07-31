@@ -52,7 +52,12 @@ export default async function BlogPostPage({ params }) {
     <main>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
-      <PageBanner label={post.tag} className="post-banner" title={<h1>{post.title}</h1>}>
+      <PageBanner
+        label={post.tag}
+        className="post-banner"
+        title={<h1>{post.title}</h1>}
+        breadcrumbs={[{ label: 'Home', href: '/' }, { label: 'Blogs', href: '/blogs' }, { label: post.title }]}
+      >
         <span className="blog-meta">{post.date} &nbsp;&middot;&nbsp; {post.readTime}</span>
       </PageBanner>
 

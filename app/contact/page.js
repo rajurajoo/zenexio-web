@@ -1,5 +1,6 @@
 import Reveal from '../../components/Reveal';
 import ContactForm from '../../components/ContactForm';
+import Breadcrumbs from '../../components/Breadcrumbs';
 import { seo, buildMetadata } from '../../lib/seo';
 
 export const metadata = buildMetadata({
@@ -17,6 +18,7 @@ export default function ContactPage() {
       <section className="contact-wrap">
         <div className="contact-wrap__glow"></div>
         <div className="container">
+          <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Contact' }]} />
           <div className="contact-grid">
 
             <Reveal>

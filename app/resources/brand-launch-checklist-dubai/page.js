@@ -37,6 +37,7 @@ export default function ChecklistPage() {
         label="Free Resource"
         className="post-banner"
         title={<h1>The Complete Brand &amp; Website Launch Checklist for Dubai, UAE &amp; India Startups</h1>}
+        breadcrumbs={[{ label: 'Home', href: '/' }, { label: 'Resources' }, { label: 'Brand Launch Checklist' }]}
       >
         <p>A practical, no-fluff checklist covering brand foundations, visual identity, website launch, business basics, marketing, and SEO — built for founders launching in the UAE or India.</p>
       </PageBanner>

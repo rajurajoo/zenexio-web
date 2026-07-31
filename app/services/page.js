@@ -16,7 +16,11 @@ export default function ServicesPage() {
     <>
     <link rel="stylesheet" href="/css/services.css" />
     <main>
-      <PageBanner label="What We Offer" title={<h1>Services Built for Modern Brands</h1>}>
+      <PageBanner
+        label="What We Offer"
+        title={<h1>Services Built for Modern Brands</h1>}
+        breadcrumbs={[{ label: 'Home', href: '/' }, { label: 'Services' }]}
+      >
         <p>Three core disciplines. One unified team. Unlimited potential for your brand&apos;s growth.</p>
       </PageBanner>
 

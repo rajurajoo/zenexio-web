@@ -37,6 +37,7 @@ export default function PricingGuidePage() {
         label="Free Resource · 2026"
         className="post-banner"
         title={<h1>Graphic Design &amp; Website Pricing Guide: Dubai, UAE &amp; India Benchmarks</h1>}
+        breadcrumbs={[{ label: 'Home', href: '/' }, { label: 'Resources' }, { label: 'Pricing Guide' }]}
       >
         <p>Real market price ranges for logos, branding, websites, e-commerce, and marketing retainers — so you can budget with confidence before you talk to any agency.</p>
       </PageBanner>

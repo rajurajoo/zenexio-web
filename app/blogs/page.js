@@ -20,7 +20,11 @@ export default function BlogsPage() {
     <>
     <link rel="stylesheet" href="/css/blogs.css" />
     <main>
-      <PageBanner label="Our Blog" title={<h1>Insights &amp; Ideas</h1>}>
+      <PageBanner
+        label="Our Blog"
+        title={<h1>Insights &amp; Ideas</h1>}
+        breadcrumbs={[{ label: 'Home', href: '/' }, { label: 'Blogs' }]}
+      >
         <p>Thoughts on design, technology, and the craft of building great brands.</p>
       </PageBanner>
 

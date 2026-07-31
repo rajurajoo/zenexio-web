@@ -370,6 +370,33 @@ h1,h2,h3,h4,h5 {
   overflow: hidden;
 }
 .page-banner__bg::before, .page-banner__bg::after { z-index: 1; }
+
+/* ─── BREADCRUMBS ───────────────────────────────── */
+.breadcrumbs {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 1.5rem;
+}
+.breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+.breadcrumbs li { display: flex; align-items: center; gap: 0.4rem; }
+.breadcrumbs a { color: var(--text-3); transition: color 0.2s; }
+.breadcrumbs a:hover { color: var(--gold); }
+.breadcrumbs span[aria-current="page"] {
+  color: var(--text-2);
+  max-width: 40ch;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.breadcrumbs__sep { color: var(--text-3); opacity: 0.5; }
 .page-banner__orb {
   position: absolute;
   top: 50%;

@@ -22,7 +22,11 @@ export default function AboutPage() {
     <>
     <link rel="stylesheet" href="/css/about.css" />
     <main>
-      <PageBanner label="Who We Are" title={<h1>Built on Curiosity,<br />Driven by Craft</h1>}>
+      <PageBanner
+        label="Who We Are"
+        title={<h1>Built on Curiosity,<br />Driven by Craft</h1>}
+        breadcrumbs={[{ label: 'Home', href: '/' }, { label: 'About' }]}
+      >
         <p>We&apos;re not just an agency — we&apos;re creative partners invested in your long-term success.</p>
       </PageBanner>
 
