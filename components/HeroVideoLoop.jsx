@@ -11,8 +11,6 @@ export default function HeroVideoLoop() {
         loop
         playsInline
       />
-      <div className="vhero__overlay"></div>
-
       <a href="#intro" className="vhero__scroll-hint" aria-label="Scroll to content">
         <span>Scroll</span>
         <div className="vhero__scroll-line"></div>
