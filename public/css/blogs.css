@@ -131,6 +131,30 @@
 .check-item:hover { border-color: var(--border-2); }
 .check-item svg { width: 18px; height: 18px; color: var(--gold); flex-shrink: 0; margin-top: 2px; }
 .check-item span { font-size: 0.92rem; color: var(--text-2); }
+
+.price-table-wrap {
+  overflow-x: auto;
+  margin-bottom: 1.8rem;
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  box-shadow: 0 1px 0 var(--emboss-light) inset, 0 6px 18px rgba(20,24,32,0.06);
+}
+.price-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+.price-table th, .price-table td {
+  padding: 0.85rem 1.1rem;
+  text-align: left;
+  white-space: nowrap;
+}
+.price-table th {
+  font-family: var(--font-disp);
+  font-weight: 700;
+  color: var(--text);
+  background: var(--surface-2);
+  border-bottom: 1px solid var(--border-2);
+}
+.price-table td { color: var(--text-2); border-bottom: 1px solid var(--border); }
+.price-table td:first-child { color: var(--text); font-weight: 600; white-space: normal; }
+.price-table tr:last-child td { border-bottom: none; }
 .post-body p {
   margin-bottom: 1.2rem;
   max-width: none;

@@ -38,6 +38,7 @@ export default function Footer() {
               <li><Link href="/services">Services</Link></li>
               <li><Link href="/blogs">Blogs</Link></li>
               <li><Link href="/resources/brand-launch-checklist-dubai">Launch Checklist</Link></li>
+              <li><Link href="/resources/design-pricing-guide-dubai-india">Pricing Guide</Link></li>
               <li><Link href="/contact">Contact Us</Link></li>
             </ul>
           </div>

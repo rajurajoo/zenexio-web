@@ -78,6 +78,7 @@ export default function ChecklistPage() {
             </div>
           </Reveal>
 
+          <Reveal href="/resources/design-pricing-guide-dubai-india" className="post-back" delay={0.16}>Also free: our Design &amp; Website Pricing Guide for Dubai &amp; India &rarr;</Reveal>
           <Reveal href="/blogs" className="post-back" delay={0.18}>&larr; Back to the blog</Reveal>
         </div>
       </section>
