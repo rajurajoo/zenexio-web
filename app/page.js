@@ -19,8 +19,18 @@ export default function HomePage() {
       <HeroVideoLoop />
 
       {/* ═══ INTRO ═══ */}
-      <section className="intro section">
+      <section className="intro section" id="intro">
         <div className="container">
+          <Reveal as="div" className="statement">
+            <span className="statement__eyebrow">Creative Agency · Dubai · UAE · India</span>
+            <h1 className="statement__title">Design That <em>Sells</em></h1>
+            <p className="statement__body">From product experiences to full-brand campaigns — we build digital work that converts, not just looks good.</p>
+            <div className="statement__cta-row">
+              <Link href="/contact" className="btn btn--gold btn--lg">Start a Project</Link>
+              <Link href="/services" className="btn btn--ghost btn--lg">See Our Work</Link>
+            </div>
+          </Reveal>
+
           <div className="intro__grid">
             <Reveal className="intro__text">
               <span className="label">Who We Are</span>
@@ -102,6 +112,62 @@ export default function HomePage() {
           <Reveal delay={0.25} style={{ textAlign: 'center', marginTop: '3rem' }}>
             <Link href="/services" className="btn btn--outline">View All Services</Link>
           </Reveal>
+        </div>
+      </section>
+
+      {/* ═══ GALLERY ═══ */}
+      <section className="gallery section">
+        <div className="container">
+          <Reveal as="div" className="section-head">
+            <span className="label">Selected Work</span>
+            <h2>A closer look at our craft</h2>
+          </Reveal>
+          <div className="gallery-grid">
+            <Reveal as="figure" className="gallery-item gallery-item--tall" delay={0.05}>
+              <img src="/images/blog/branding.webp" alt="Brand identity design work" />
+              <figcaption>Brand Identity</figcaption>
+            </Reveal>
+            <Reveal as="figure" className="gallery-item" delay={0.1}>
+              <img src="/images/blog/design.webp" alt="Graphic design work" />
+              <figcaption>Graphic Design</figcaption>
+            </Reveal>
+            <Reveal as="figure" className="gallery-item" delay={0.15}>
+              <img src="/images/blog/webdev.webp" alt="Web development work" />
+              <figcaption>Web Development</figcaption>
+            </Reveal>
+            <Reveal as="figure" className="gallery-item" delay={0.2}>
+              <img src="/images/blog/marketing.webp" alt="Digital marketing campaign work" />
+              <figcaption>Digital Marketing</figcaption>
+            </Reveal>
+            <Reveal as="figure" className="gallery-item gallery-item--tall" delay={0.25}>
+              <img src="/images/blog/strategy.webp" alt="Brand strategy work" />
+              <figcaption>Brand Strategy</figcaption>
+            </Reveal>
+            <Reveal as="figure" className="gallery-item" delay={0.3}>
+              <img src="/images/blog/headless.webp" alt="Headless commerce web work" />
+              <figcaption>E-Commerce</figcaption>
+            </Reveal>
+          </div>
+        </div>
+      </section>
+
+      {/* ═══ VIDEOS ═══ */}
+      <section className="videos section section--sand">
+        <div className="container">
+          <Reveal as="div" className="section-head">
+            <span className="label">In Motion</span>
+            <h2>See how we bring brands to life</h2>
+          </Reveal>
+          <div className="video-grid">
+            <Reveal as="div" className="video-card" delay={0.05}>
+              <video src="/videos/hero-ecommerce.mov" autoPlay muted loop playsInline />
+              <div className="video-card__label">Product Storytelling</div>
+            </Reveal>
+            <Reveal as="div" className="video-card" delay={0.12}>
+              <video src="/videos/video-hero.mov" autoPlay muted loop playsInline />
+              <div className="video-card__label">Brand Motion Design</div>
+            </Reveal>
+          </div>
         </div>
       </section>
 

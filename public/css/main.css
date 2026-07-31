@@ -5,23 +5,23 @@
 ═══════════════════════════════════════════════════ */
 
 :root {
-  --bg:        #081018;
-  --bg-2:      #0a0f18;
-  --bg-3:      #0d1420;
-  --surface:   #101c2b;
-  --surface-2: #162537;
-  --border:    rgba(63,143,224,0.12);
-  --border-2:  rgba(63,143,224,0.22);
+  --bg:        #ffffff;
+  --bg-2:      #f5f6f8;
+  --bg-3:      #eef0f3;
+  --surface:   #ffffff;
+  --surface-2: #f5f6f8;
+  --border:    rgba(20,24,32,0.1);
+  --border-2:  rgba(20,24,32,0.16);
 
-  --text:      #eaf2fb;
-  --text-2:    #8fa8c4;
-  --text-3:    #56728f;
+  --text:      #10141c;
+  --text-2:    #454e5c;
+  --text-3:    #7b8493;
 
-  --gold:      #3f8fe0;
-  --gold-h:    #63a8ee;
-  --gold-dim:  rgba(63,143,224,0.15);
-  --gold-glow: rgba(63,143,224,0.3);
-  --sand:      #8ecbf0;
+  --gold:      #2f6fd6;
+  --gold-h:    #1c56b8;
+  --gold-dim:  rgba(47,111,214,0.1);
+  --gold-glow: rgba(47,111,214,0.28);
+  --sand:      #1c56b8;
   --rust:      #1c4d82;
   --night:     #0a0820;
   --dusk:      #2d1060;
@@ -35,8 +35,11 @@
   --r-xl:   32px;
   --r-full: 9999px;
 
-  --sh-gold: 0 0 40px rgba(63,143,224,0.25);
-  --sh-lg:   0 16px 48px rgba(0,0,0,0.6);
+  --sh-gold: 0 0 40px rgba(47,111,214,0.2);
+  --sh-lg:   0 16px 48px rgba(20,24,32,0.14);
+
+  --emboss-light: rgba(255,255,255,0.75);
+  --emboss-dark:  rgba(20,24,32,0.28);
 
   --ease-out: cubic-bezier(0.16,1,0.3,1);
   --ease-io:  cubic-bezier(0.4,0,0.2,1);
@@ -109,7 +112,7 @@ h1,h2,h3,h4,h5 {
   font-weight: 600;
   font-size: 0.9rem;
   letter-spacing: 0.06em;
-  transition: transform 0.28s var(--ease-out), box-shadow 0.28s var(--ease-out), background 0.28s;
+  transition: transform 0.18s var(--ease-out), box-shadow 0.18s var(--ease-out), background 0.28s;
   position: relative;
   overflow: hidden;
   white-space: nowrap;
@@ -117,40 +120,76 @@ h1,h2,h3,h4,h5 {
 .btn::after {
   content:'';
   position:absolute; inset:0;
-  background:rgba(255,255,255,0.07);
+  background:rgba(255,255,255,0.12);
   opacity:0;
   transition:opacity 0.15s;
 }
 .btn:hover::after { opacity:1; }
 
+/* ─── EMBOSS BUTTONS ─────────────────────────────── */
 .btn--gold {
   background: var(--gold);
-  color: #081018;
-  box-shadow: 0 4px 20px var(--gold-glow);
+  color: #ffffff;
+  box-shadow:
+    0 1px 0 var(--emboss-light) inset,
+    0 -2px 4px rgba(0,0,0,0.18) inset,
+    0 8px 18px var(--gold-glow);
 }
 .btn--gold:hover {
-  transform: translateY(-2px) scale(1.02);
-  box-shadow: 0 8px 36px var(--gold-glow);
+  transform: translateY(-2px);
+  box-shadow:
+    0 1px 0 var(--emboss-light) inset,
+    0 -2px 4px rgba(0,0,0,0.18) inset,
+    0 12px 26px var(--gold-glow);
   background: var(--gold-h);
+}
+.btn--gold:active {
+  transform: translateY(1px);
+  box-shadow:
+    0 2px 5px rgba(0,0,0,0.25) inset,
+    0 1px 0 rgba(0,0,0,0.1);
 }
 
 .btn--outline {
-  background: transparent;
+  background: var(--bg);
   color: var(--gold);
-  border: 1.5px solid var(--gold);
+  border: 1.5px solid var(--border-2);
+  box-shadow:
+    0 1px 0 var(--emboss-light) inset,
+    0 3px 8px rgba(20,24,32,0.08);
 }
 .btn--outline:hover {
-  background: var(--gold);
-  color: #081018;
-  transform: translateY(-2px) scale(1.02);
+  border-color: var(--gold);
+  transform: translateY(-2px);
+  box-shadow:
+    0 1px 0 var(--emboss-light) inset,
+    0 8px 18px rgba(20,24,32,0.12);
+}
+.btn--outline:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 5px rgba(20,24,32,0.12) inset;
 }
 
 .btn--ghost {
-  background: transparent;
+  background: var(--bg-2);
   color: var(--text);
   border: 1.5px solid var(--border-2);
+  box-shadow:
+    0 1px 0 var(--emboss-light) inset,
+    0 2px 6px rgba(20,24,32,0.06);
 }
-.btn--ghost:hover { border-color: var(--gold); color: var(--gold); }
+.btn--ghost:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+  transform: translateY(-2px);
+  box-shadow:
+    0 1px 0 var(--emboss-light) inset,
+    0 8px 16px rgba(20,24,32,0.1);
+}
+.btn--ghost:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 5px rgba(20,24,32,0.1) inset;
+}
 
 .btn--lg { padding: 1em 2.5em; font-size: 1rem; }
 .btn--sm { padding: 0.5em 1.3em; font-size: 0.8rem; }
@@ -200,14 +239,17 @@ h1,h2,h3,h4,h5 {
   top: 0; left: 0; right: 0;
   z-index: 200;
   padding: 1.2rem 0;
+  background: rgba(255,255,255,0.7);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
   transition: background 0.35s var(--ease-io), padding 0.35s, box-shadow 0.35s;
 }
 .site-header.scrolled {
-  background: rgba(6,10,18,0.88);
+  background: rgba(255,255,255,0.92);
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
   padding: 0.75rem 0;
-  box-shadow: 0 1px 0 var(--border);
+  box-shadow: 0 1px 0 var(--border), 0 4px 20px rgba(20,24,32,0.06);
 }
 
 .nav { display: flex; align-items: center; justify-content: space-between; }
@@ -227,14 +269,14 @@ h1,h2,h3,h4,h5 {
   justify-content: center;
   width: 1.7em; height: 1.7em;
   background: var(--gold);
-  color: #081018;
+  color: #ffffff;
   border-radius: 6px;
   font-size: 0.9em;
   box-shadow: 0 0 16px var(--gold-glow);
 }
 .nav__logo-rest { color: var(--text); }
-.nav__logo-img  { height: 26px; width: auto; display: block; }
-.footer__logo-img { height: 24px; width: auto; display: block; }
+.nav__logo-img  { height: 26px; width: auto; display: block; filter: invert(1) brightness(0.15); }
+.footer__logo-img { height: 24px; width: auto; display: block; filter: invert(1) brightness(0.15); }
 
 .nav__links {
   display: flex;
@@ -264,7 +306,7 @@ h1,h2,h3,h4,h5 {
 .nav__link:hover::after, .nav__link.active::after { transform:scaleX(1); }
 .nav__link--cta {
   background: var(--gold);
-  color: #081018 !important;
+  color: #ffffff !important;
   padding: 0.5rem 1.4rem;
   border-radius: var(--r-full);
   box-shadow: 0 4px 14px var(--gold-glow);
@@ -295,7 +337,7 @@ h1,h2,h3,h4,h5 {
   .nav__burger { display:flex; }
   .nav__links {
     position:fixed; inset:0;
-    background:rgba(6,10,18,0.97);
+    background:rgba(255,255,255,0.97);
     backdrop-filter:blur(20px);
     flex-direction:column;
     justify-content:center;
@@ -316,14 +358,14 @@ h1,h2,h3,h4,h5 {
   position: relative;
   overflow: hidden;
   text-align: center;
-  background: #060a14;
+  background: #f5f7fb;
 }
 .page-banner__bg {
   position: absolute; inset: 0;
   background:
-    linear-gradient(160deg, #0a1730 0%, #060a14 55%),
-    radial-gradient(ellipse 70% 70% at 50% 0%, rgba(63,143,224,0.18), transparent 70%),
-    radial-gradient(circle at 88% 15%, rgba(120,90,224,0.14), transparent 42%);
+    linear-gradient(160deg, #eef2fa 0%, #f5f7fb 55%),
+    radial-gradient(ellipse 70% 70% at 50% 0%, rgba(47,111,214,0.1), transparent 70%),
+    radial-gradient(circle at 88% 15%, rgba(120,90,224,0.08), transparent 42%);
   pointer-events: none;
   overflow: hidden;
 }
@@ -365,13 +407,13 @@ h1,h2,h3,h4,h5 {
   position: absolute;
   inset: -15%;
   background-image:
-    radial-gradient(1.6px 1.6px at 12% 22%, rgba(255,255,255,.85), transparent),
-    radial-gradient(1.4px 1.4px at 68% 12%, rgba(255,255,255,.65), transparent),
-    radial-gradient(1.2px 1.2px at 38% 68%, rgba(255,255,255,.55), transparent),
-    radial-gradient(1.4px 1.4px at 82% 58%, rgba(255,255,255,.75), transparent),
-    radial-gradient(1.6px 1.6px at 55% 38%, rgba(255,255,255,.5), transparent),
-    radial-gradient(1.2px 1.2px at 8% 82%, rgba(255,255,255,.6), transparent),
-    radial-gradient(1.2px 1.2px at 93% 88%, rgba(255,255,255,.5), transparent);
+    radial-gradient(1.6px 1.6px at 12% 22%, rgba(20,24,32,.3), transparent),
+    radial-gradient(1.4px 1.4px at 68% 12%, rgba(20,24,32,.22), transparent),
+    radial-gradient(1.2px 1.2px at 38% 68%, rgba(20,24,32,.2), transparent),
+    radial-gradient(1.4px 1.4px at 82% 58%, rgba(20,24,32,.26), transparent),
+    radial-gradient(1.6px 1.6px at 55% 38%, rgba(20,24,32,.18), transparent),
+    radial-gradient(1.2px 1.2px at 8% 82%, rgba(20,24,32,.2), transparent),
+    radial-gradient(1.2px 1.2px at 93% 88%, rgba(20,24,32,.18), transparent);
   background-repeat: repeat;
   background-size: 260px 220px;
   animation: bannerDrift 50s linear infinite;
@@ -383,7 +425,7 @@ h1,h2,h3,h4,h5 {
   top: 50%; left: 50%;
   width: 680px; height: 680px;
   margin: -340px 0 0 -340px;
-  border: 1px solid rgba(94,180,255,0.14);
+  border: 1px solid rgba(47,111,214,0.14);
   border-radius: 50%;
   animation: bannerSpin 70s linear infinite;
 }
@@ -446,7 +488,7 @@ h1,h2,h3,h4,h5 {
 
 /* ─── FOOTER ────────────────────────────────────── */
 .footer {
-  background: #040810;
+  background: var(--bg-2);
   border-top: 1px solid var(--border);
   padding-block: 4rem 2rem;
   position: relative;
