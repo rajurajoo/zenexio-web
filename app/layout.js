@@ -5,8 +5,13 @@ import CursorSmoke from '../components/CursorSmoke';
 export const metadata = {
   metadataBase: new URL('https://www.zenexio.pro'),
   icons: {
-    icon: '/images/ZEN LOGO WHITE.png',
-    apple: '/images/ZEN LOGO WHITE.png'
+    icon: [
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/favicon-32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/favicon-16.png', sizes: '16x16', type: 'image/png' }
+    ],
+    apple: '/images/apple-touch-icon.png',
+    shortcut: '/favicon.svg'
   },
   robots: 'index, follow'
 };
