@@ -184,6 +184,38 @@ export default function HomePage() {
         </div>
       </div>
 
+      {/* ═══ FAQ ═══ */}
+      <section className="faq section section--sand">
+        <div className="container">
+          <Reveal as="div" className="section-head">
+            <span className="label">Frequently Asked</span>
+            <h2>Questions, answered plainly</h2>
+          </Reveal>
+          <div className="faq-list">
+            <Reveal as="details" className="faq-item" delay={0.02}>
+              <summary>What services does Zenexio offer?</summary>
+              <p>Zenexio offers graphic design, web development, digital marketing, brand strategy, and motion design as a full-service creative agency.</p>
+            </Reveal>
+            <Reveal as="details" className="faq-item" delay={0.06}>
+              <summary>Where is Zenexio located and who do they serve?</summary>
+              <p>Zenexio is based in Dubai, UAE, with a delivery team in India, and serves clients across the UAE and India.</p>
+            </Reveal>
+            <Reveal as="details" className="faq-item" delay={0.1}>
+              <summary>How much do Zenexio&apos;s services cost?</summary>
+              <p>Every project starts with a discovery conversation and a transparent, scoped quote — pricing depends on scope, so the fastest way to get an accurate number is to request a quote on our <Link href="/contact">contact page</Link>.</p>
+            </Reveal>
+            <Reveal as="details" className="faq-item" delay={0.14}>
+              <summary>How fast does Zenexio respond to inquiries?</summary>
+              <p>Zenexio replies to every inquiry within one business day.</p>
+            </Reveal>
+            <Reveal as="details" className="faq-item" delay={0.18}>
+              <summary>Do clients own their design and code files?</summary>
+              <p>Yes. Zenexio provides fully editable source files and complete usage rights to clients on every project.</p>
+            </Reveal>
+          </div>
+        </div>
+      </section>
+
       {/* ═══ CTA ═══ */}
       <section className="home-cta section">
         <div className="container">
