@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Reveal from '../components/Reveal';
-import HeroHolo from '../components/HeroHolo';
+import HeroFan from '../components/HeroFan';
 import { seo, buildMetadata } from '../lib/seo';
 
 export const metadata = buildMetadata({
@@ -16,7 +16,7 @@ export default function HomePage() {
     <link rel="stylesheet" href="/css/home.css" />
     <main>
       {/* ═══════════════════════════════════ HERO ═══════════════════════════════════ */}
-      <HeroHolo />
+      <HeroFan />
 
       {/* ═══ INTRO ═══ */}
       <section className="intro section">
