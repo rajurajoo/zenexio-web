@@ -64,7 +64,10 @@ export default async function BlogPostPage({ params }) {
       <section className="section post-section">
         <div className="container post-container">
 
-          <Reveal as="img" className="post-hero-img" src={`/images/blog/${post.image}`} alt={post.imageAlt || post.title} />
+          <Reveal as="figure" className="post-hero-figure">
+            <img className="post-hero-img" src={`/images/blog/${post.image}`} alt={post.imageAlt || post.title} />
+            <figcaption>{post.imageAlt || post.title}</figcaption>
+          </Reveal>
 
           <Reveal as="article" className="post-body" delay={0.06}>
             <p className="post-lede">{post.excerpt}</p>
