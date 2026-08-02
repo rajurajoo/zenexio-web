@@ -124,27 +124,27 @@ export default function HomePage() {
           </Reveal>
           <div className="gallery-grid">
             <Reveal as="figure" className="gallery-item gallery-item--tall" delay={0.05}>
-              <img src="/images/blog/branding.webp" alt="Brand identity design work" />
+              <img src="/images/blog/branding.webp" alt="Brand identity design by Zenexio, creative agency in Dubai" />
               <figcaption>Brand Identity</figcaption>
             </Reveal>
             <Reveal as="figure" className="gallery-item" delay={0.1}>
-              <img src="/images/blog/design.webp" alt="Graphic design work" />
+              <img src="/images/blog/design.webp" alt="Graphic design work by Zenexio, Dubai" />
               <figcaption>Graphic Design</figcaption>
             </Reveal>
             <Reveal as="figure" className="gallery-item" delay={0.15}>
-              <img src="/images/blog/webdev.webp" alt="Web development work" />
+              <img src="/images/blog/webdev.webp" alt="Web development project by Zenexio, Dubai" />
               <figcaption>Web Development</figcaption>
             </Reveal>
             <Reveal as="figure" className="gallery-item" delay={0.2}>
-              <img src="/images/blog/marketing.webp" alt="Digital marketing campaign work" />
+              <img src="/images/blog/marketing.webp" alt="Digital marketing campaign by Zenexio, Dubai" />
               <figcaption>Digital Marketing</figcaption>
             </Reveal>
             <Reveal as="figure" className="gallery-item gallery-item--tall" delay={0.25}>
-              <img src="/images/blog/strategy.webp" alt="Brand strategy work" />
+              <img src="/images/blog/strategy.webp" alt="Brand strategy work by Zenexio, Dubai" />
               <figcaption>Brand Strategy</figcaption>
             </Reveal>
             <Reveal as="figure" className="gallery-item" delay={0.3}>
-              <img src="/images/blog/headless.webp" alt="Headless commerce web work" />
+              <img src="/images/blog/headless.webp" alt="E-commerce web development by Zenexio, Dubai" />
               <figcaption>E-Commerce</figcaption>
             </Reveal>
           </div>

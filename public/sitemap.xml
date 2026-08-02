@@ -1,9 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://www.zenexio.pro/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.zenexio.pro/images/zen-wordmark.png</image:loc>
+      <image:title>Zenexio logo</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.zenexio.pro/images/blog/branding.webp</image:loc>
+      <image:title>Brand identity design work by Zenexio, Dubai</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.zenexio.pro/images/blog/design.webp</image:loc>
+      <image:title>Graphic design work by Zenexio, Dubai</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.zenexio.pro/images/blog/webdev.webp</image:loc>
+      <image:title>Web development work by Zenexio, Dubai</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.zenexio.pro/images/blog/marketing.webp</image:loc>
+      <image:title>Digital marketing campaign work by Zenexio, Dubai</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.zenexio.pro/images/blog/strategy.webp</image:loc>
+      <image:title>Brand strategy work by Zenexio, Dubai</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.zenexio.pro/images/blog/headless.webp</image:loc>
+      <image:title>Headless e-commerce web work by Zenexio, Dubai</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://www.zenexio.pro/about</loc>
@@ -24,76 +52,136 @@
     <loc>https://www.zenexio.pro/blogs/affordable-graphic-design-companies-dubai</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.zenexio.pro/images/blog/affordable-design.webp</image:loc>
+      <image:title>Designer reviewing graphic design pricing and package offers, Dubai</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://www.zenexio.pro/blogs/creative-agency-in-dubai-2026</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.zenexio.pro/images/blog/dubai-agency.jpg</image:loc>
+      <image:title>Choosing a creative agency in Dubai, UAE and India</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://www.zenexio.pro/blogs/brand-visual-identity-first-impressions</loc>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://www.zenexio.pro/images/blog/featured.webp</image:loc>
+      <image:title>Brand visual identity and first impressions design</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://www.zenexio.pro/blogs/performance-first-web-design</loc>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://www.zenexio.pro/images/blog/webdev.webp</image:loc>
+      <image:title>Performance-first web design and Core Web Vitals</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://www.zenexio.pro/blogs/clicks-to-conversions-digital-funnel</loc>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://www.zenexio.pro/images/blog/marketing.webp</image:loc>
+      <image:title>Digital marketing funnel optimization</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://www.zenexio.pro/blogs/colour-psychology-in-branding</loc>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://www.zenexio.pro/images/blog/branding.webp</image:loc>
+      <image:title>Colour psychology in brand identity design</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://www.zenexio.pro/blogs/grid-is-not-a-prison-layout-breaks</loc>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://www.zenexio.pro/images/blog/design.webp</image:loc>
+      <image:title>Grid systems and intentional layout breaks in design</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://www.zenexio.pro/blogs/consistency-beats-creativity-branding</loc>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://www.zenexio.pro/images/blog/strategy.webp</image:loc>
+      <image:title>Brand consistency versus creativity strategy</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://www.zenexio.pro/blogs/headless-cms-2025</loc>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://www.zenexio.pro/images/blog/headless.webp</image:loc>
+      <image:title>Headless CMS architecture for web development</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://www.zenexio.pro/blogs/restaurant-branding-agency-dubai</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.zenexio.pro/images/blog/restaurant.webp</image:loc>
+      <image:title>Restaurant branding agency Dubai — table setting</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://www.zenexio.pro/blogs/real-estate-website-design-uae</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.zenexio.pro/images/blog/realestate.webp</image:loc>
+      <image:title>Real estate website design UAE — modern property</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://www.zenexio.pro/blogs/clinic-salon-website-design-dubai</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.zenexio.pro/images/blog/salon.webp</image:loc>
+      <image:title>Clinic and salon website design Dubai — salon interior</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://www.zenexio.pro/blogs/bilingual-branding-agency-dubai</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.zenexio.pro/images/blog/bilingual.webp</image:loc>
+      <image:title>Bilingual Arabic and English branding agency Dubai</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://www.zenexio.pro/blogs/ecommerce-seo-agency-india</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.zenexio.pro/images/blog/ecommerce.jpg</image:loc>
+      <image:title>E-commerce SEO agency India — fulfilment boxes</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://www.zenexio.pro/blogs/shopify-developer-dubai</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.zenexio.pro/images/blog/shopify.webp</image:loc>
+      <image:title>Shopify developer Dubai — online store</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://www.zenexio.pro/resources/brand-launch-checklist-dubai</loc>
