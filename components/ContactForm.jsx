@@ -1,6 +1,6 @@
 'use client';
 
-import { useActionState } from 'react';
+import { useActionState, useEffect } from 'react';
 import { submitContactForm } from '../app/actions';
 
 const initialState = { success: false, error: null };
@@ -10,6 +10,14 @@ const SERVICE_OPTIONS = ['Graphic Design', 'Web Development', 'Digital Marketing
 export default function ContactForm({ variant = 'full' }) {
   const [state, formAction, pending] = useActionState(submitContactForm, initialState);
   const idPrefix = variant === 'full' ? '' : 'qq-';
+
+  useEffect(() => {
+    if (state.success && typeof window.gtag === 'function') {
+      window.gtag('event', 'generate_lead', {
+        form_type: variant === 'full' ? 'contact_form' : 'quick_quote'
+      });
+    }
+  }, [state.success, variant]);
 
   if (state.success) {
     return (

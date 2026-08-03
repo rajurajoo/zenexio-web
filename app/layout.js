@@ -2,6 +2,7 @@ import Script from 'next/script';
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
 import CursorSmoke from '../components/CursorSmoke';
+import CookieNotice from '../components/CookieNotice';
 
 const GA_MEASUREMENT_ID = 'G-HQJWLWM4JR';
 
@@ -126,6 +127,7 @@ export default function RootLayout({ children }) {
         {children}
         <Footer />
         <CursorSmoke />
+        <CookieNotice />
       </body>
     </html>
   );

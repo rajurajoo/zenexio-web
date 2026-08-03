@@ -67,7 +67,7 @@ export default function Footer() {
 
         <div className="footer__bottom">
           <p>&copy; {new Date().getFullYear()} Zenexio. All rights reserved.</p>
-          <p>Design Beyond Imagination.</p>
+          <p><Link href="/privacy-policy">Privacy Policy</Link></p>
         </div>
       </div>
     </footer>
