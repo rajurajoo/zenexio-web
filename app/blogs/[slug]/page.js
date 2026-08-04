@@ -1,3 +1,4 @@
+import { Fragment } from 'react';
 import Link from 'next/link';
 import { redirect } from 'next/navigation';
 import Reveal from '../../../components/Reveal';
@@ -71,13 +72,21 @@ export default async function BlogPostPage({ params }) {
 
           <Reveal as="article" className="post-body" delay={0.06}>
             <p className="post-lede">{post.excerpt}</p>
-            {post.body.map((block, i) =>
-              block.h2 ? (
-                <h2 key={i}>{block.h2}</h2>
-              ) : (
-                <p key={i} dangerouslySetInnerHTML={{ __html: block.p }} />
-              )
-            )}
+            {post.body.map((block, i) => (
+              <Fragment key={i}>
+                {block.h2 ? (
+                  <h2>{block.h2}</h2>
+                ) : (
+                  <p dangerouslySetInnerHTML={{ __html: block.p }} />
+                )}
+                {i === Math.floor(post.body.length / 2) && (
+                  <div className="post-inline-cta">
+                    <p>Need this handled for your business, not just explained?</p>
+                    <Link href="/contact" className="btn btn--outline btn--sm">Get a Free Quote &nbsp;→</Link>
+                  </div>
+                )}
+              </Fragment>
+            ))}
           </Reveal>
 
           <Reveal className="post-cta" delay={0.1}>

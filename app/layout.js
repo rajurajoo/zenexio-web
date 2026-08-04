@@ -3,6 +3,8 @@ import Nav from '../components/Nav';
 import Footer from '../components/Footer';
 import CursorSmoke from '../components/CursorSmoke';
 import CookieNotice from '../components/CookieNotice';
+import FloatingWhatsApp from '../components/FloatingWhatsApp';
+import MobileCtaBar from '../components/MobileCtaBar';
 
 const GA_MEASUREMENT_ID = 'G-HQJWLWM4JR';
 
@@ -123,10 +125,24 @@ export default function RootLayout({ children }) {
             gtag('config', '${GA_MEASUREMENT_ID}');
           `}
         </Script>
+        {/* Static form so Netlify's build-time bot registers the "zenexio-lead" form for
+            submission handling + email notifications. The real, interactive form lives in
+            ContactForm.jsx and posts to this same form-name via fetch(). */}
+        <form name="zenexio-lead" data-netlify="true" netlify-honeypot="hp-field" hidden>
+          <input type="text" name="name" />
+          <input type="email" name="email" />
+          <input type="text" name="service" />
+          <input type="text" name="message" />
+          <input type="text" name="source" />
+          <input type="text" name="hp-field" />
+        </form>
+
         <Nav />
         {children}
         <Footer />
         <CursorSmoke />
+        <FloatingWhatsApp />
+        <MobileCtaBar />
         <CookieNotice />
       </body>
     </html>

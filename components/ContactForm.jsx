@@ -7,6 +7,35 @@ const initialState = { success: false, error: null };
 
 const SERVICE_OPTIONS = ['Graphic Design', 'Web Development', 'Digital Marketing', 'Brand Strategy'];
 
+function encodeForm(data) {
+  return Object.keys(data)
+    .map((k) => encodeURIComponent(k) + '=' + encodeURIComponent(data[k]))
+    .join('&');
+}
+
+// Netlify's form backend only picks up submissions POSTed to a path where the
+// build bot found a matching static `data-netlify` form (see app/layout.js).
+// The visible form uses a React server action for the UX; this fires in
+// parallel so Netlify actually captures and can email-notify every lead.
+function submitToNetlify(formData, source) {
+  try {
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encodeForm({
+        'form-name': 'zenexio-lead',
+        name: formData.get('name') || '',
+        email: formData.get('email') || '',
+        service: formData.get('service') || '',
+        message: formData.get('message') || '',
+        source
+      })
+    }).catch(() => {});
+  } catch {
+    // Non-blocking best-effort — the server action above is the source of truth for UX.
+  }
+}
+
 export default function ContactForm({ variant = 'full' }) {
   const [state, formAction, pending] = useActionState(submitContactForm, initialState);
   const idPrefix = variant === 'full' ? '' : 'qq-';
@@ -35,7 +64,11 @@ export default function ContactForm({ variant = 'full' }) {
   }
 
   return (
-    <form className={variant === 'full' ? 'contact-form' : 'quick-quote__form'} action={formAction}>
+    <form
+      className={variant === 'full' ? 'contact-form' : 'quick-quote__form'}
+      action={formAction}
+      onSubmit={(e) => submitToNetlify(new FormData(e.currentTarget), variant === 'full' ? 'contact_form' : 'quick_quote')}
+    >
       {state.error && (
         <div className="form-err-banner">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10" /><line x1="12" y1="8" x2="12" y2="12" /><line x1="12" y1="16" x2="12.01" y2="16" /></svg>
