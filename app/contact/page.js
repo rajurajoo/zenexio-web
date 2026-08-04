@@ -52,6 +52,19 @@ export default function ContactPage() {
             </Reveal>
 
           </div>
+
+          <Reveal className="contact-map" delay={0.2}>
+            <iframe
+              title="Zenexio location — Dubai, UAE"
+              src="https://www.google.com/maps?q=Dubai,+United+Arab+Emirates&output=embed"
+              width="100%"
+              height="380"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </Reveal>
         </div>
       </section>
     </main>

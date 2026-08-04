@@ -97,3 +97,12 @@ a.c-detail__val:hover { color:var(--gold); }
 
 @media(max-width:900px){ .contact-grid { grid-template-columns:1fr; } }
 @media(max-width:540px){ .form-row { grid-template-columns:1fr; } .form-card { padding:1.5rem; } }
+
+.contact-map {
+  margin-top: clamp(3rem, 6vw, 4.5rem);
+  border-radius: var(--r-xl);
+  overflow: hidden;
+  border: 1px solid var(--border-2);
+  box-shadow: 0 1px 0 var(--emboss-light) inset, 0 12px 32px rgba(20,24,32,0.1);
+}
+.contact-map iframe { display: block; }
