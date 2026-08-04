@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 const SNIPPET = `<div style="text-align:center;padding:14px 0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-size:12px;color:#8a94a3;">
   Website by
-  <a href="https://www.zenexio.pro" target="_blank" rel="noopener"
+  <a href="https://zenexio.pro" target="_blank" rel="noopener"
      style="color:#3f8fe0;text-decoration:none;font-weight:600;">
     Zenexio
   </a>
@@ -26,7 +26,7 @@ export default function BadgeCopyBlock() {
       <div className="badge-block__preview" aria-hidden="true">
         <div style={{ textAlign: 'center', padding: '14px 0', fontFamily: '-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif', fontSize: '12px', color: '#8a94a3' }}>
           Website by{' '}
-          <a href="https://www.zenexio.pro" target="_blank" rel="noopener" style={{ color: '#3f8fe0', textDecoration: 'none', fontWeight: 600 }}>
+          <a href="https://zenexio.pro" target="_blank" rel="noopener" style={{ color: '#3f8fe0', textDecoration: 'none', fontWeight: 600 }}>
             Zenexio
           </a>
           {' '}— Creative Agency in Dubai, UAE &amp; India

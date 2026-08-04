@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-const SITE_URL = 'https://www.zenexio.pro';
+const SITE_URL = 'https://zenexio.pro';
 
 export default function Breadcrumbs({ items }) {
   const jsonLd = {

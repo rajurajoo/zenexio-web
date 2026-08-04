@@ -38,4 +38,4 @@ Allow: /
 User-agent: Bytespider
 Allow: /
 
-Sitemap: https://www.zenexio.pro/sitemap.xml
+Sitemap: https://zenexio.pro/sitemap.xml

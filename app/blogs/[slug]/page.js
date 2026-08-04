@@ -19,7 +19,7 @@ export async function generateMetadata({ params }) {
     keywords: post.keywords,
     path: '/blogs/' + post.slug,
     ogType: 'article',
-    ogImage: 'https://www.zenexio.pro/images/blog/' + post.image
+    ogImage: 'https://zenexio.pro/images/blog/' + post.image
   });
 }
 
@@ -35,15 +35,15 @@ export default async function BlogPostPage({ params }) {
     '@type': 'BlogPosting',
     headline: post.title,
     description: post.metaDescription,
-    image: 'https://www.zenexio.pro/images/blog/' + post.image,
+    image: 'https://zenexio.pro/images/blog/' + post.image,
     datePublished: post.isoDate,
     author: { '@type': 'Organization', name: 'Zenexio' },
     publisher: {
       '@type': 'Organization',
       name: 'Zenexio',
-      logo: { '@type': 'ImageObject', url: 'https://www.zenexio.pro/images/zen-wordmark.png' }
+      logo: { '@type': 'ImageObject', url: 'https://zenexio.pro/images/zen-wordmark.png' }
     },
-    mainEntityOfPage: 'https://www.zenexio.pro/blogs/' + post.slug
+    mainEntityOfPage: 'https://zenexio.pro/blogs/' + post.slug
   };
 
   return (

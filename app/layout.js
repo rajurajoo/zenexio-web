@@ -7,7 +7,7 @@ import CookieNotice from '../components/CookieNotice';
 const GA_MEASUREMENT_ID = 'G-HQJWLWM4JR';
 
 export const metadata = {
-  metadataBase: new URL('https://www.zenexio.pro'),
+  metadataBase: new URL('https://zenexio.pro'),
   icons: {
     icon: [
       { url: '/favicon.svg', type: 'image/svg+xml' },
@@ -23,14 +23,14 @@ export const metadata = {
 const orgJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'ProfessionalService',
-  '@id': 'https://www.zenexio.pro/#organization',
+  '@id': 'https://zenexio.pro/#organization',
   name: 'Zenexio',
   description: 'Zenexio is a full-service creative agency in Dubai, UAE, with a delivery team in India, offering graphic design, web development, digital marketing, and brand strategy. Founded in 2017, Zenexio has delivered 500+ projects with transparent pricing and full client ownership of deliverables.',
   slogan: 'Design Beyond Imagination',
   foundingDate: '2017',
-  url: 'https://www.zenexio.pro',
-  logo: 'https://www.zenexio.pro/images/zen-wordmark.png',
-  image: 'https://www.zenexio.pro/images/zen-wordmark.png',
+  url: 'https://zenexio.pro',
+  logo: 'https://zenexio.pro/images/zen-wordmark.png',
+  image: 'https://zenexio.pro/images/zen-wordmark.png',
   email: 'info@zenexio.pro',
   telephone: '+971503848523',
   priceRange: '$$',

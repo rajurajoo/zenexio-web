@@ -38,12 +38,12 @@ Zenexio is a full-service creative agency based in Dubai, UAE, with a delivery t
 
 ## Website
 ```
-https://www.zenexio.pro
+https://zenexio.pro
 ```
 
 ## Appointment/booking link (if you want a direct CTA button)
 ```
-https://www.zenexio.pro/contact
+https://zenexio.pro/contact
 ```
 
 ## Phone
@@ -69,7 +69,7 @@ India
 ```
 We're Zenexio — a full-service creative agency in Dubai serving the UAE and India. Graphic design, web development, digital marketing, and brand strategy under one roof. 500+ projects delivered, replies within one business day. Get a free quote today.
 ```
-CTA button: "Learn more" → https://www.zenexio.pro/contact
+CTA button: "Learn more" → https://zenexio.pro/contact
 
 ## Q&A section — seed these yourself (competitors can also ask/answer, so answering first controls the narrative)
 **Q: What services does Zenexio offer?**

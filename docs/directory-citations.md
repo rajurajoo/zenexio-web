@@ -8,7 +8,7 @@ Zenexio
 Dubai, United Arab Emirates
 +971 503 848523
 info@zenexio.pro
-https://www.zenexio.pro
+https://zenexio.pro
 ```
 
 ## Short description (150 characters — for listings with tight limits)
@@ -56,7 +56,7 @@ Zenexio is a full-service creative agency based in Dubai, UAE, with a delivery t
 | IndiaMART | indiamart.com | If offering B2B services |
 
 ## Submission tips
-- Always use `https://www.zenexio.pro` as the URL — never a shortened link or a page other than the homepage for the primary listing link.
+- Always use `https://zenexio.pro` as the URL — never a shortened link or a page other than the homepage for the primary listing link.
 - Where a directory asks for a category, prefer "Web Design Agency" / "Marketing Agency" / "Graphic Designer" over generic "Business Services" — specificity helps relevance.
 - Track what you've submitted in a simple spreadsheet: directory name, date submitted, listing URL, status (pending/live/rejected) — this makes it easy to audit and update later if your address or phone number ever changes.
 - Expect Clutch and GoodFirms in particular to ask for client reviews before your profile ranks well internally on their platform — line up 2-3 past clients willing to leave a short review once you submit.

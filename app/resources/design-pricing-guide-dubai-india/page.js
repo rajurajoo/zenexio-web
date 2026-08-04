@@ -21,9 +21,9 @@ const jsonLd = {
   publisher: {
     '@type': 'Organization',
     name: 'Zenexio',
-    logo: { '@type': 'ImageObject', url: 'https://www.zenexio.pro/images/zen-wordmark.png' }
+    logo: { '@type': 'ImageObject', url: 'https://zenexio.pro/images/zen-wordmark.png' }
   },
-  mainEntityOfPage: 'https://www.zenexio.pro/resources/design-pricing-guide-dubai-india'
+  mainEntityOfPage: 'https://zenexio.pro/resources/design-pricing-guide-dubai-india'
 };
 
 export default function PricingGuidePage() {
