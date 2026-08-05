@@ -14,12 +14,15 @@ function encodeForm(data) {
 }
 
 // Netlify's form backend only picks up submissions POSTed to a path where the
-// build bot found a matching static `data-netlify` form (see app/layout.js).
-// The visible form uses a React server action for the UX; this fires in
-// parallel so Netlify actually captures and can email-notify every lead.
+// build bot found a matching static `data-netlify` form. Next.js pages aren't
+// plain static HTML at build time, so the form must live in a real static file
+// (public/__forms.html) per https://opennext.js.org/netlify/forms — posting to
+// "/" here would 404 the form-name lookup. The visible form uses a React
+// server action for the UX; this fires in parallel so Netlify actually
+// captures and can email-notify every lead.
 function submitToNetlify(formData, source) {
   try {
-    fetch('/', {
+    fetch('/__forms.html', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encodeForm({

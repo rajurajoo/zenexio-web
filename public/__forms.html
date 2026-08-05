@@ -1,0 +1,19 @@
+<html>
+  <head></head>
+  <body>
+    <!--
+      Static file used only so Netlify's build-time bot can detect and
+      register the "zenexio-lead" form (per https://opennext.js.org/netlify/forms).
+      Never rendered to visitors — ContactForm.jsx posts here via fetch().
+    -->
+    <form name="zenexio-lead" data-netlify="true" netlify-honeypot="hp-field" hidden>
+      <input type="hidden" name="form-name" value="zenexio-lead" />
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <input type="text" name="service" />
+      <input type="text" name="message" />
+      <input type="text" name="source" />
+      <input type="text" name="hp-field" />
+    </form>
+  </body>
+</html>
