@@ -140,6 +140,10 @@ export default function ServicesPage() {
                 <div><h4>CMS Integration</h4><p>Headless CMS solutions and custom admin panels that make content updates effortless.</p></div>
               </div>
               <div className="feat-item">
+                <div className="feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="3" y="4" width="18" height="14" rx="2" /><path d="M3 9h18M8 4v5" /><circle cx="13" cy="14" r="2" /></svg></div>
+                <div><h4>Custom CRM Portals</h4><p>Best-price, fully-owned CRM systems built around your actual sales process — no per-seat licence fees.</p></div>
+              </div>
+              <div className="feat-item">
                 <div className="feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /></svg></div>
                 <div><h4>Performance &amp; Security</h4><p>Core Web Vitals optimisation, HTTPS, regular audits — fast and secure by design.</p></div>
               </div>
