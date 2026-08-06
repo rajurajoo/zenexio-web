@@ -11,11 +11,69 @@ export const metadata = buildMetadata({
   path: '/services'
 });
 
+const SERVICE_NAMES = [
+  'Graphic Design',
+  'Company Profile Design',
+  'Web Development',
+  'E-Commerce Development',
+  'Digital Marketing',
+  'SEO',
+  'Brand Strategy',
+  'Brand Naming',
+  'Package Design',
+  'Motion Design'
+];
+
+const servicesJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  itemListElement: SERVICE_NAMES.map((name, i) => ({
+    '@type': 'Service',
+    position: i + 1,
+    name,
+    provider: { '@type': 'ProfessionalService', name: 'Zenexio', url: 'https://zenexio.pro' },
+    areaServed: [
+      { '@type': 'City', name: 'Dubai' },
+      { '@type': 'Country', name: 'United Arab Emirates' },
+      { '@type': 'Country', name: 'India' }
+    ]
+  }))
+};
+
+const servicesFaqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'How long does a typical project take?',
+      acceptedAnswer: { '@type': 'Answer', text: 'A brand identity project typically takes 2-4 weeks, a business website 3-6 weeks, and an e-commerce build 6-10 weeks — exact timelines depend on scope and how quickly feedback is provided.' }
+    },
+    {
+      '@type': 'Question',
+      name: 'Do you offer ongoing digital marketing retainers?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Yes. SEO, social media management, and paid advertising are all available as monthly retainers alongside one-off project work.' }
+    },
+    {
+      '@type': 'Question',
+      name: 'Can Zenexio handle design, web, and marketing together?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Yes — that is our core model. Handling brand, web, and marketing under one team avoids the disconnects that happen when separate vendors hand off work to each other.' }
+    },
+    {
+      '@type': 'Question',
+      name: 'Do you work with businesses outside Dubai?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Yes, we serve clients across the UAE and India, and can work with clients elsewhere remotely.' }
+    }
+  ]
+};
+
 export default function ServicesPage() {
   return (
     <>
     <link rel="stylesheet" href="/css/services.css" />
     <main>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(servicesJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(servicesFaqJsonLd) }} />
       <PageBanner
         label="What We Offer"
         title={<h1>Services Built for Modern Brands</h1>}
@@ -170,6 +228,34 @@ export default function ServicesPage() {
             <Reveal as="div" className="proc-step" delay={0.15}><div className="proc-num">03</div><h3>Create</h3><p>Designing, building, refining — with your feedback at every checkpoint.</p></Reveal>
             <div className="proc-conn"></div>
             <Reveal as="div" className="proc-step" delay={0.2}><div className="proc-num">04</div><h3>Launch &amp; Grow</h3><p>We ship, measure, and iterate. Launch is the beginning, not the end.</p></Reveal>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="section section--sand">
+        <div className="container">
+          <Reveal as="div" className="section-head">
+            <span className="label">Common Questions</span>
+            <h2>Before you reach out</h2>
+          </Reveal>
+          <div className="faq-list">
+            <Reveal as="details" className="faq-item" delay={0.02}>
+              <summary>How long does a typical project take?</summary>
+              <p>A brand identity project typically takes 2-4 weeks, a business website 3-6 weeks, and an e-commerce build 6-10 weeks — exact timelines depend on scope and how quickly feedback is provided.</p>
+            </Reveal>
+            <Reveal as="details" className="faq-item" delay={0.06}>
+              <summary>Do you offer ongoing digital marketing retainers?</summary>
+              <p>Yes. SEO, social media management, and paid advertising are all available as monthly retainers alongside one-off project work.</p>
+            </Reveal>
+            <Reveal as="details" className="faq-item" delay={0.1}>
+              <summary>Can Zenexio handle design, web, and marketing together?</summary>
+              <p>Yes — that is our core model. Handling brand, web, and marketing under one team avoids the disconnects that happen when separate vendors hand off work to each other.</p>
+            </Reveal>
+            <Reveal as="details" className="faq-item" delay={0.14}>
+              <summary>Do you work with businesses outside Dubai?</summary>
+              <p>Yes, we serve clients across the UAE and India, and can work with clients elsewhere remotely.</p>
+            </Reveal>
           </div>
         </div>
       </section>
