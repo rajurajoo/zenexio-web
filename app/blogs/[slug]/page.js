@@ -66,7 +66,7 @@ export default async function BlogPostPage({ params }) {
         <div className="container post-container">
 
           <Reveal as="figure" className="post-hero-figure">
-            <img className="post-hero-img" src={`/images/blog/${post.image}`} alt={post.imageAlt || post.title} />
+            <img className="post-hero-img" src={`/images/blog/${post.image}`} alt={post.imageAlt || post.title} loading="lazy" decoding="async" />
             <figcaption>{post.imageAlt || post.title}</figcaption>
           </Reveal>
 

@@ -124,27 +124,27 @@ export default function HomePage() {
           </Reveal>
           <div className="gallery-grid">
             <Reveal as="figure" className="gallery-item gallery-item--tall" delay={0.05}>
-              <img src="/images/blog/branding.webp" alt="Brand identity design by Zenexio, creative agency in Dubai" />
+              <img src="/images/blog/branding.webp" alt="Brand identity design by Zenexio, creative agency in Dubai" loading="lazy" decoding="async" />
               <figcaption>Brand Identity</figcaption>
             </Reveal>
             <Reveal as="figure" className="gallery-item" delay={0.1}>
-              <img src="/images/blog/design.webp" alt="Graphic design work by Zenexio, Dubai" />
+              <img src="/images/blog/design.webp" alt="Graphic design work by Zenexio, Dubai" loading="lazy" decoding="async" />
               <figcaption>Graphic Design</figcaption>
             </Reveal>
             <Reveal as="figure" className="gallery-item" delay={0.15}>
-              <img src="/images/blog/webdev.webp" alt="Web development project by Zenexio, Dubai" />
+              <img src="/images/blog/webdev.webp" alt="Web development project by Zenexio, Dubai" loading="lazy" decoding="async" />
               <figcaption>Web Development</figcaption>
             </Reveal>
             <Reveal as="figure" className="gallery-item" delay={0.2}>
-              <img src="/images/blog/marketing.webp" alt="Digital marketing campaign by Zenexio, Dubai" />
+              <img src="/images/blog/marketing.webp" alt="Digital marketing campaign by Zenexio, Dubai" loading="lazy" decoding="async" />
               <figcaption>Digital Marketing</figcaption>
             </Reveal>
             <Reveal as="figure" className="gallery-item gallery-item--tall" delay={0.25}>
-              <img src="/images/blog/strategy.webp" alt="Brand strategy work by Zenexio, Dubai" />
+              <img src="/images/blog/strategy.webp" alt="Brand strategy work by Zenexio, Dubai" loading="lazy" decoding="async" />
               <figcaption>Brand Strategy</figcaption>
             </Reveal>
             <Reveal as="figure" className="gallery-item" delay={0.3}>
-              <img src="/images/blog/headless.webp" alt="E-commerce web development by Zenexio, Dubai" />
+              <img src="/images/blog/headless.webp" alt="E-commerce web development by Zenexio, Dubai" loading="lazy" decoding="async" />
               <figcaption>E-Commerce</figcaption>
             </Reveal>
           </div>
@@ -160,11 +160,11 @@ export default function HomePage() {
           </Reveal>
           <div className="video-grid">
             <Reveal as="div" className="video-card" delay={0.05}>
-              <video src="/videos/hero-ecommerce.mov" autoPlay muted loop playsInline />
+              <video src="/videos/hero-ecommerce.mov" autoPlay muted loop playsInline preload="metadata" />
               <div className="video-card__label">Product Storytelling</div>
             </Reveal>
             <Reveal as="div" className="video-card" delay={0.12}>
-              <video src="/videos/video-hero.mov" autoPlay muted loop playsInline />
+              <video src="/videos/video-hero.mov" autoPlay muted loop playsInline preload="metadata" />
               <div className="video-card__label">Brand Motion Design</div>
             </Reveal>
           </div>
