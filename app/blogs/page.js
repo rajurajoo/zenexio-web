@@ -25,7 +25,7 @@ export default function BlogsPage() {
         title={<h1>Insights &amp; Ideas</h1>}
         breadcrumbs={[{ label: 'Home', href: '/' }, { label: 'Blogs' }]}
       >
-        <p>Thoughts on design, technology, and the craft of building great brands.</p>
+        <p>Thoughts on design, technology, and the craft of building great brands. Looking for something specific? Browse by <Link href="/industries">industry</Link>.</p>
       </PageBanner>
 
       <section className="blogs-section section">

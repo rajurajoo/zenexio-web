@@ -37,6 +37,7 @@ export default function Footer() {
               <li><Link href="/about">About Us</Link></li>
               <li><Link href="/services">Services</Link></li>
               <li><Link href="/blogs">Blogs</Link></li>
+              <li><Link href="/industries">Industries We Serve</Link></li>
               <li><Link href="/resources/brand-launch-checklist-dubai">Launch Checklist</Link></li>
               <li><Link href="/resources/design-pricing-guide-dubai-india">Pricing Guide</Link></li>
               <li><Link href="/resources/website-credit-badge">Free Credit Badge</Link></li>
