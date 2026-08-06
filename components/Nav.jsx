@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
@@ -48,7 +49,7 @@ export default function Nav() {
     <header className={'site-header' + (scrolled ? ' scrolled' : '')} id="site-header">
       <nav className="nav container">
         <Link href="/" className="nav__logo">
-          <img src="/images/zen-wordmark.png" alt="Zenexio" className="nav__logo-img" />
+          <Image src="/images/zen-wordmark.png" alt="Zenexio" className="nav__logo-img" width={159} height={26} priority />
         </Link>
 
         <ul className={'nav__links' + (open ? ' open' : '')} id="nav-links">

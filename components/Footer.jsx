@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Footer() {
@@ -8,7 +9,7 @@ export default function Footer() {
         <div className="footer__grid">
           <div className="footer__brand">
             <Link href="/" className="footer__logo">
-              <img src="/images/zen-wordmark.png" alt="Zenexio" className="footer__logo-img" />
+              <Image src="/images/zen-wordmark.png" alt="Zenexio" className="footer__logo-img" width={147} height={24} loading="lazy" />
             </Link>
             <p>Design Beyond Imagination. We craft experiences that transcend the ordinary and leave lasting impressions.</p>
             <div className="footer__socials">

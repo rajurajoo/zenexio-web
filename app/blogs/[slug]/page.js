@@ -1,4 +1,5 @@
 import { Fragment } from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { redirect } from 'next/navigation';
 import Reveal from '../../../components/Reveal';
@@ -66,7 +67,7 @@ export default async function BlogPostPage({ params }) {
         <div className="container post-container">
 
           <Reveal as="figure" className="post-hero-figure">
-            <img className="post-hero-img" src={`/images/blog/${post.image}`} alt={post.imageAlt || post.title} loading="lazy" decoding="async" />
+            <Image className="post-hero-img" src={`/images/blog/${post.image}`} alt={post.imageAlt || post.title} fill sizes="(max-width: 760px) 100vw, 760px" loading="lazy" />
             <figcaption>{post.imageAlt || post.title}</figcaption>
           </Reveal>
 
