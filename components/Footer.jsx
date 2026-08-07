@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="footer__grid">
           <div className="footer__brand">
             <Link href="/" className="footer__logo">
-              <Image src="/images/zen-wordmark.png" alt="Zenexio" className="footer__logo-img" width={147} height={24} loading="lazy" />
+              <Image src="/images/zenexio-logo-purple.svg" alt="Zenexio — Inspiring Brands with Vision" className="footer__logo-img" width={148} height={31} loading="lazy" />
             </Link>
             <p>Design Beyond Imagination. We craft experiences that transcend the ordinary and leave lasting impressions.</p>
             <div className="footer__socials">
@@ -51,6 +51,7 @@ export default function Footer() {
             <ul>
               <li><Link href="/services#design">Graphic Design</Link></li>
               <li><Link href="/services#web">Web Development</Link></li>
+              <li><Link href="/services#crm">CRM Portal Development</Link></li>
               <li><Link href="/services#marketing">Digital Marketing</Link></li>
               <li><Link href="/services#branding">Brand Strategy</Link></li>
               <li><Link href="/services#motion">Motion Design</Link></li>

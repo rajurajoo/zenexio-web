@@ -49,7 +49,7 @@ export default function Nav() {
     <header className={'site-header' + (scrolled ? ' scrolled' : '')} id="site-header">
       <nav className="nav container">
         <Link href="/" className="nav__logo">
-          <Image src="/images/zen-wordmark.png" alt="Zenexio" className="nav__logo-img" width={159} height={26} priority />
+          <Image src="/images/zenexio-logo-purple.svg" alt="Zenexio — Inspiring Brands with Vision" className="nav__logo-img" width={148} height={31} priority />
         </Link>
 
         <ul className={'nav__links' + (open ? ' open' : '')} id="nav-links">

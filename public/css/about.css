@@ -27,7 +27,7 @@
   font-family:var(--font-disp);
   font-size:2.4rem;
   font-weight:900;
-  background:linear-gradient(135deg,#8ecbf0,#3f8fe0);
+  background:linear-gradient(135deg,#d8b4fe,#3f8fe0);
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent;
   background-clip:text;
@@ -53,7 +53,7 @@
   top:-80px; left:50%; transform:translateX(-50%);
   width:500px; height:300px;
   border-radius:50%;
-  background:radial-gradient(circle,rgba(63,143,224,0.12),transparent 60%);
+  background:radial-gradient(circle,rgba(147,51,192,0.12),transparent 60%);
   pointer-events:none;
 }
 .mission-block blockquote {

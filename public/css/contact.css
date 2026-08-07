@@ -8,7 +8,7 @@
 }
 .contact-wrap__glow {
   position:absolute; inset:0; pointer-events:none;
-  background:radial-gradient(ellipse 60% 60% at 60% 20%, rgba(63,143,224,0.1), transparent 70%);
+  background:radial-gradient(ellipse 60% 60% at 60% 20%, rgba(147,51,192,0.1), transparent 70%);
 }
 .contact-grid {
   display:grid;
