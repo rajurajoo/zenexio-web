@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import Reveal from '../components/Reveal';
-import HeroVideoLoop from '../components/HeroVideoLoop';
+import HeroCosmic from '../components/HeroCosmic';
 import { seo, buildMetadata } from '../lib/seo';
 
 export const metadata = buildMetadata({
@@ -17,7 +17,7 @@ export default function HomePage() {
     <link rel="stylesheet" href="/css/home.css" />
     <main>
       {/* ═══════════════════════════════════ HERO ═══════════════════════════════════ */}
-      <HeroVideoLoop />
+      <HeroCosmic />
 
       {/* ═══ INTRO ═══ */}
       <section className="intro section" id="intro">
@@ -44,6 +44,62 @@ export default function HomePage() {
               <div className="icard"><span className="icard__num">7+</span><span className="icard__label">Years of Craft</span></div>
               <div className="icard"><span className="icard__num">98%</span><span className="icard__label">Client Retention</span></div>
               <div className="icard"><span className="icard__num">40+</span><span className="icard__label">Industries Served</span></div>
+            </Reveal>
+          </div>
+        </div>
+      </section>
+
+      {/* ═══ WORKING PROCESS ═══ */}
+      <section className="process section" id="process">
+        <div className="container">
+          <Reveal as="div" className="process__head">
+            <span className="chero__script process__script">Working Process</span>
+            <h2 className="process__title">Our simple process for<br />creating great work</h2>
+          </Reveal>
+
+          <div className="process__timeline">
+            <Reveal as="div" className="process__step process__step--active" delay={0.05}>
+              <div className="process__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="11" cy="11" r="7" /><path d="M21 21l-4.3-4.3" strokeLinecap="round" /></svg>
+              </div>
+              <div className="process__dot"></div>
+              <div className="process__copy">
+                <h3>Discovery &amp; Strategy</h3>
+                <p>Understanding your goals, audience, and market before any design or code begins.</p>
+              </div>
+            </Reveal>
+
+            <Reveal as="div" className="process__step" delay={0.1}>
+              <div className="process__copy process__copy--left">
+                <h3>Concept &amp; Planning</h3>
+                <p>Mapping the structure, messaging, and creative direction the project will follow.</p>
+              </div>
+              <div className="process__dot"></div>
+              <div className="process__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M9 11l3 3L22 4" /><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" /></svg>
+              </div>
+            </Reveal>
+
+            <Reveal as="div" className="process__step" delay={0.15}>
+              <div className="process__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 19l7-7 3 3-7 7-3-3z" /><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z" /><path d="M2 2l7.586 7.586" /><circle cx="11" cy="11" r="2" /></svg>
+              </div>
+              <div className="process__dot"></div>
+              <div className="process__copy">
+                <h3>Design &amp; Build</h3>
+                <p>Bringing the concept to life with real design, development, and content — reviewed with you at every stage.</p>
+              </div>
+            </Reveal>
+
+            <Reveal as="div" className="process__step" delay={0.2}>
+              <div className="process__copy process__copy--left">
+                <h3>Launch &amp; Handoff</h3>
+                <p>Testing, refining, and shipping — with full ownership of every file handed straight to you.</p>
+              </div>
+              <div className="process__dot"></div>
+              <div className="process__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z" /><path d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z" /><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0" /><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" /></svg>
+              </div>
             </Reveal>
           </div>
         </div>
