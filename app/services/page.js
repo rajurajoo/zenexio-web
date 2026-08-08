@@ -33,7 +33,7 @@ const servicesJsonLd = {
     '@type': 'Service',
     position: i + 1,
     name,
-    provider: { '@type': 'ProfessionalService', name: 'Zenexio', url: 'https://zenexio.pro' },
+    provider: { '@id': 'https://zenexio.pro/#organization' },
     areaServed: [
       { '@type': 'City', name: 'Dubai' },
       { '@type': 'Country', name: 'United Arab Emirates' },
