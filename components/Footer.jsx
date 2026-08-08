@@ -19,7 +19,7 @@ export default function Footer() {
               <a href="https://www.facebook.com/profile.php?id=61560461255608&sk=reels_tab" target="_blank" rel="noopener" aria-label="Facebook" className="footer__soc">
                 <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12.06C22 6.51 17.52 2 12 2S2 6.51 2 12.06c0 5.02 3.66 9.18 8.44 9.94v-7.03H7.9v-2.91h2.54V9.79c0-2.51 1.49-3.9 3.78-3.9 1.09 0 2.23.2 2.23.2v2.45h-1.26c-1.24 0-1.63.77-1.63 1.56v1.86h2.78l-.44 2.91h-2.34V22c4.78-.76 8.44-4.92 8.44-9.94z"/></svg>
               </a>
-              <a href="https://wa.me/971503848523" target="_blank" rel="noopener" aria-label="WhatsApp" className="footer__soc">
+              <a href="https://wa.me/971503848523?text=Hi%20Zenexio%2C%20I'd%20like%20to%20get%20a%20quote%20for%20a%20project." target="_blank" rel="noopener" aria-label="WhatsApp" className="footer__soc">
                 <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.52 2 2.04 6.48 2.04 12c0 1.77.46 3.45 1.32 4.93L2 22l5.25-1.38A9.93 9.93 0 0 0 12.04 22c5.52 0 10-4.48 10-10s-4.48-10-10-10zm5.87 14.16c-.25.71-1.47 1.36-2.02 1.44-.52.08-1.17.11-1.89-.12-.43-.14-.98-.32-1.69-.63-2.97-1.28-4.9-4.26-5.05-4.46-.15-.2-1.21-1.61-1.21-3.07 0-1.46.77-2.17 1.04-2.47.27-.3.6-.37.8-.37.2 0 .4 0 .58.01.19.01.44-.07.68.53.25.61.85 2.1.92 2.25.07.15.12.33.02.53-.1.2-.15.32-.3.49-.15.17-.31.38-.44.51-.15.15-.3.31-.13.61.17.3.77 1.27 1.65 2.06 1.14 1.02 2.1 1.34 2.42 1.49.32.15.51.13.7-.08.2-.21.83-.96 1.05-1.29.22-.32.44-.27.73-.16.3.11 1.89.89 2.21 1.05.32.16.53.24.61.37.08.14.08.78-.17 1.5z"/></svg>
               </a>
               <a href="https://www.tiktok.com/@zenexio.pro" target="_blank" rel="noopener" aria-label="TikTok" className="footer__soc">
