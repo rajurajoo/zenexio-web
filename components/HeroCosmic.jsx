@@ -11,7 +11,7 @@ export default function HeroCosmic() {
       <div className="chero__overlay" aria-hidden="true" />
 
       <div className="chero__inner container">
-        <h1 className="chero__title chero__title--simple">DESIGN BEYOND IMAGINATION</h1>
+        <p className="chero__title chero__title--simple">DESIGN BEYOND IMAGINATION</p>
         <Link href="/contact" className="chero__btn chero__btn--solid">Start a Project</Link>
       </div>
 
