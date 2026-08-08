@@ -58,6 +58,12 @@ export default function ContactPage() {
 
           </div>
 
+          <Reveal className="section-head" delay={0.22} style={{ marginTop: '3rem' }}>
+            <span className="label">What Happens Next</span>
+            <h2>A real reply, not an autoresponder</h2>
+            <p>Every message that comes through this form is read by an actual person on the Zenexio team, not routed to a generic inbox. We reply within one business day with either a few clarifying questions or a scoped estimate, depending on how much detail you&apos;ve shared about your project. If it&apos;s a good fit, the next step is usually a short call to align on timeline and budget before any work begins — there&apos;s no obligation and no hard sell.</p>
+          </Reveal>
+
           <Reveal className="contact-map" delay={0.2}>
             <iframe
               title="Zenexio location — Dubai, UAE"

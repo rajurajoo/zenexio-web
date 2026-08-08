@@ -48,6 +48,10 @@ export default function BadgePage() {
                 <span>Swap the link, text, and colors to credit yourself or your own agency — the markup is yours to reuse.</span>
               </li>
             </ul>
+
+            <h2>How to Install It</h2>
+            <p>Copy the snippet above and paste it directly inside your site&apos;s <code>&lt;footer&gt;</code> element, right before the closing tag. Because every style is written inline, there is nothing else to configure — no stylesheet to import, no class names to match, and no risk of it inheriting unexpected styles from the rest of your page. It works the same way whether your site runs on plain HTML, WordPress, Webflow, or a JavaScript framework like Next.js or React.</p>
+            <p>If you&apos;d rather credit yourself or your own studio, just edit the link text and href before pasting — the markup and inline styles are yours to keep and reuse on as many client sites as you like, with no attribution required back to Zenexio.</p>
           </Reveal>
 
           <Reveal className="post-cta" delay={0.1}>

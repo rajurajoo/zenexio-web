@@ -105,6 +105,7 @@ export default async function BlogPostPage({ params }) {
                     <Link
                       href={`/blogs/${r.slug}`}
                       className="blog-card__img"
+                      aria-label={r.title}
                       style={{ background: `linear-gradient(to bottom,rgba(10,8,3,.15),rgba(10,8,3,.6)),url('/images/blog/${r.image}')`, backgroundSize: 'cover', backgroundPosition: 'center' }}
                     >
                       <span className="blog-tag">{r.tag}</span>
@@ -112,7 +113,7 @@ export default async function BlogPostPage({ params }) {
                     <div className="blog-card__body">
                       <span className="blog-meta">{r.date} &middot; {r.readTime}</span>
                       <h3><Link href={`/blogs/${r.slug}`}>{r.title}</Link></h3>
-                      <Link href={`/blogs/${r.slug}`} className="blog-card__link">Read more &rarr;</Link>
+                      <Link href={`/blogs/${r.slug}`} className="blog-card__link">Read more<span className="sr-only">: {r.title}</span> &rarr;</Link>
                     </div>
                   </article>
                 ))}
