@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 1125" width="2000" height="1125">
+  <defs>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="60%" y2="100%">
+      <stop offset="0%" stop-color="#3a1a5c"/>
+      <stop offset="30%" stop-color="#6d3aa8"/>
+      <stop offset="55%" stop-color="#a05fc9"/>
+      <stop offset="75%" stop-color="#c98bd6"/>
+      <stop offset="100%" stop-color="#e8b8d8"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#5b2f8a"/>
+      <stop offset="100%" stop-color="#241141"/>
+    </linearGradient>
+    <linearGradient id="mtn1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7346a3"/>
+      <stop offset="100%" stop-color="#4a2470"/>
+    </linearGradient>
+    <linearGradient id="mtn2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#57297f"/>
+      <stop offset="100%" stop-color="#361a54"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f6c9e8" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#f6c9e8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="2000" height="1125" fill="url(#sky)"/>
+  <circle cx="1300" cy="380" r="220" fill="url(#sun)"/>
+
+  <!-- distant clouds -->
+  <g opacity="0.35" fill="#f0d4ee">
+    <ellipse cx="300" cy="150" rx="260" ry="30"/>
+    <ellipse cx="750" cy="90" rx="320" ry="22"/>
+    <ellipse cx="1600" cy="130" rx="300" ry="26"/>
+  </g>
+
+  <!-- back mountains -->
+  <polygon points="0,620 200,480 420,600 650,460 900,610 1150,470 1400,600 1650,500 2000,620 2000,650 0,650" fill="url(#mtn2)" opacity="0.9"/>
+  <!-- front mountains -->
+  <polygon points="0,660 180,560 500,650 800,540 1050,660 1350,580 1650,660 2000,600 2000,680 0,680" fill="url(#mtn1)"/>
+
+  <!-- water -->
+  <rect y="680" width="2000" height="445" fill="url(#water)"/>
+  <g opacity="0.18" stroke="#e8c6ee" stroke-width="2">
+    <line x1="0" y1="760" x2="2000" y2="760"/>
+    <line x1="0" y1="830" x2="2000" y2="830"/>
+    <line x1="0" y1="920" x2="2000" y2="920"/>
+    <line x1="0" y1="1010" x2="2000" y2="1010"/>
+    <line x1="0" y1="1080" x2="2000" y2="1080"/>
+  </g>
+
+  <!-- lone tree -->
+  <g transform="translate(560,680)">
+    <path d="M0 40 C -10 10 5 -40 40 -70 C 65 -95 60 -140 30 -170" stroke="#1a0e2e" stroke-width="14" fill="none" stroke-linecap="round"/>
+    <path d="M30 -170 C 10 -190 -20 -195 -45 -180" stroke="#1a0e2e" stroke-width="8" fill="none" stroke-linecap="round"/>
+    <path d="M30 -170 C 55 -190 90 -188 115 -165" stroke="#1a0e2e" stroke-width="8" fill="none" stroke-linecap="round"/>
+    <path d="M40 -70 C 70 -85 100 -80 120 -55" stroke="#1a0e2e" stroke-width="9" fill="none" stroke-linecap="round"/>
+    <path d="M15 -30 C -20 -45 -55 -40 -75 -15" stroke="#1a0e2e" stroke-width="8" fill="none" stroke-linecap="round"/>
+    <g fill="#160a28" opacity="0.92">
+      <ellipse cx="-30" cy="-195" rx="95" ry="70"/>
+      <ellipse cx="60" cy="-225" rx="120" ry="85"/>
+      <ellipse cx="150" cy="-190" rx="90" ry="65"/>
+      <ellipse cx="10" cy="-140" rx="80" ry="55"/>
+      <ellipse cx="-90" cy="-150" rx="65" ry="48"/>
+    </g>
+  </g>
+
+  <!-- reflection -->
+  <g transform="translate(560,680) scale(1,-1)" opacity="0.32">
+    <path d="M0 40 C -10 10 5 -40 40 -70 C 65 -95 60 -140 30 -170" stroke="#1a0e2e" stroke-width="14" fill="none" stroke-linecap="round"/>
+    <g fill="#160a28">
+      <ellipse cx="-30" cy="-195" rx="95" ry="60"/>
+      <ellipse cx="60" cy="-225" rx="120" ry="70"/>
+      <ellipse cx="150" cy="-190" rx="90" ry="55"/>
+      <ellipse cx="10" cy="-140" rx="80" ry="48"/>
+    </g>
+  </g>
+
+  <!-- small islands -->
+  <g fill="#2c1548" opacity="0.85">
+    <ellipse cx="130" cy="668" rx="140" ry="14"/>
+    <ellipse cx="1870" cy="655" rx="110" ry="12"/>
+  </g>
+</svg>

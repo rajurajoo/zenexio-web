@@ -193,6 +193,15 @@
   background-clip: text;
   color: transparent;
 }
+.chero__title--simple {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: clamp(1.8rem, 5.2vw, 3.6rem);
+  letter-spacing: 0.06em;
+  text-shadow: 0 2px 30px rgba(0,0,0,0.4);
+  margin-bottom: 2.4rem;
+  line-height: 1.25;
+}
 .chero__body {
   font-family: var(--font-body);
   font-size: clamp(0.95rem, 1.4vw, 1.1rem);
