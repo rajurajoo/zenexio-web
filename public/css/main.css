@@ -822,3 +822,35 @@ h1,h2,h3,h4,h5 {
   }
   body { padding-bottom: 58px; }
 }
+
+/* ─── IMAGE SLOT (placeholder for client-supplied images) ─── */
+.img-slot {
+  width: 100%;
+  border-radius: var(--r-lg);
+  background: var(--surface-2);
+  border: 1.5px dashed var(--border-2);
+  position: relative;
+  overflow: hidden;
+}
+.img-slot__inner {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  color: var(--text-3);
+  text-align: center;
+  padding: 1rem;
+}
+.img-slot__icon { width: 34px; height: 34px; opacity: 0.6; }
+.img-slot__label {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.75;
+}
+.img-slot--rounded { border-radius: var(--r-xl); }

@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Reveal from '../components/Reveal';
 import HeroCosmic from '../components/HeroCosmic';
+import ImageSlot from '../components/ImageSlot';
 import { seo, buildMetadata } from '../lib/seo';
 
 export const metadata = buildMetadata({
@@ -204,6 +205,37 @@ export default function HomePage() {
               <Image src="/images/blog/headless.webp" alt="E-commerce web development by Zenexio, Dubai" fill sizes="(max-width: 560px) 100vw, (max-width: 900px) 50vw, 33vw" style={{ objectFit: 'cover' }} loading="lazy" />
               <figcaption>E-Commerce</figcaption>
             </Reveal>
+          </div>
+        </div>
+      </section>
+
+      {/* ═══ CLIENT WORK SNAPSHOTS (image placeholders) ═══ */}
+      <section className="snapshots section section--sand">
+        <div className="container">
+          <Reveal as="div" className="section-head">
+            <span className="label">Client Work</span>
+            <h2>Real projects, real results</h2>
+          </Reveal>
+          <div className="snapshots-grid">
+            <Reveal delay={0.05}><ImageSlot label="Project Screenshot 1" ratio="4/3" /></Reveal>
+            <Reveal delay={0.1}><ImageSlot label="Project Screenshot 2" ratio="4/3" /></Reveal>
+            <Reveal delay={0.15}><ImageSlot label="Project Screenshot 3" ratio="4/3" /></Reveal>
+            <Reveal delay={0.2}><ImageSlot label="Project Screenshot 4" ratio="4/3" /></Reveal>
+          </div>
+        </div>
+      </section>
+
+      {/* ═══ STUDIO / TEAM STRIP (image placeholders) ═══ */}
+      <section className="studio-strip section">
+        <div className="container">
+          <Reveal as="div" className="section-head">
+            <span className="label">Behind The Work</span>
+            <h2>Our studio &amp; the people behind it</h2>
+          </Reveal>
+          <div className="studio-strip-grid">
+            <Reveal delay={0.05}><ImageSlot label="Studio Photo" ratio="1/1" /></Reveal>
+            <Reveal delay={0.1}><ImageSlot label="Team Photo" ratio="1/1" /></Reveal>
+            <Reveal delay={0.15}><ImageSlot label="Team at Work" ratio="1/1" /></Reveal>
           </div>
         </div>
       </section>

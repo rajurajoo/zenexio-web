@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Reveal from '../../components/Reveal';
 import PageBanner from '../../components/PageBanner';
+import ImageSlot from '../../components/ImageSlot';
 import { seo, buildMetadata } from '../../lib/seo';
 
 export const metadata = buildMetadata({
@@ -51,6 +52,13 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Studio Photo */}
+      <section className="section">
+        <div className="container">
+          <Reveal><ImageSlot label="Studio / Office Photo" ratio="21/9" /></Reveal>
+        </div>
+      </section>
+
       {/* Mission */}
       <section className="section section--sand" id="mission">
         <div className="container">
@@ -80,6 +88,21 @@ export default function AboutPage() {
                 <div><h4>{v[0]}</h4><p>{v[1]}</p></div>
               </Reveal>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Team Grid */}
+      <section className="section">
+        <div className="container">
+          <Reveal as="div" className="section-head">
+            <span className="label">The People</span>
+            <h2>Meet the team</h2>
+          </Reveal>
+          <div className="studio-strip-grid">
+            <Reveal delay={0.05}><ImageSlot label="Team Member 1" ratio="1/1" /></Reveal>
+            <Reveal delay={0.1}><ImageSlot label="Team Member 2" ratio="1/1" /></Reveal>
+            <Reveal delay={0.15}><ImageSlot label="Team Member 3" ratio="1/1" /></Reveal>
           </div>
         </div>
       </section>

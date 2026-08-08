@@ -1,6 +1,7 @@
 import Reveal from '../../components/Reveal';
 import ContactForm from '../../components/ContactForm';
 import Breadcrumbs from '../../components/Breadcrumbs';
+import ImageSlot from '../../components/ImageSlot';
 import { seo, buildMetadata } from '../../lib/seo';
 
 export const metadata = buildMetadata({
@@ -44,6 +45,10 @@ export default function ContactPage() {
               <div className="c-avail">
                 <div className="c-avail__dot"></div>
                 <span>Accepting new projects — Q3 2026</span>
+              </div>
+
+              <div style={{ marginTop: '2rem' }}>
+                <ImageSlot label="Office Photo" ratio="4/3" />
               </div>
             </Reveal>
 

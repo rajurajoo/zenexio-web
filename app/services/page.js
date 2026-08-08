@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Reveal from '../../components/Reveal';
 import PageBanner from '../../components/PageBanner';
 import ContactForm from '../../components/ContactForm';
+import ImageSlot from '../../components/ImageSlot';
 import { seo, buildMetadata } from '../../lib/seo';
 
 export const metadata = buildMetadata({
@@ -82,6 +83,18 @@ export default function ServicesPage() {
       >
         <p>Three core disciplines. One unified team. Unlimited potential for your brand&apos;s growth.</p>
       </PageBanner>
+
+      {/* Work Samples */}
+      <section className="section">
+        <div className="container">
+          <div className="snapshots-grid">
+            <Reveal delay={0.05}><ImageSlot label="Work Sample 1" ratio="4/3" /></Reveal>
+            <Reveal delay={0.1}><ImageSlot label="Work Sample 2" ratio="4/3" /></Reveal>
+            <Reveal delay={0.15}><ImageSlot label="Work Sample 3" ratio="4/3" /></Reveal>
+            <Reveal delay={0.2}><ImageSlot label="Work Sample 4" ratio="4/3" /></Reveal>
+          </div>
+        </div>
+      </section>
 
       {/* Graphic Design */}
       <section className="service-block section" id="design">
