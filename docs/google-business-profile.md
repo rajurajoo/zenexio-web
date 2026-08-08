@@ -25,7 +25,7 @@ Advertising Agency
 
 ## Business description (750 character limit)
 ```
-Zenexio is a full-service creative agency based in Dubai, UAE, with a delivery team in India. We offer graphic design, web development, digital marketing, and brand strategy for businesses across the UAE and India. Founded in 2017, we've delivered 500+ projects with transparent, scoped pricing, replies within one business day, and full client ownership of every source file and deliverable. From logo and brand identity design to custom websites, e-commerce stores, SEO, and paid campaigns, our team handles strategy through execution under one roof — so nothing gets lost between vendors. Serving startups, SMEs, restaurants, real estate agencies, clinics, and salons across Dubai, the wider UAE, and India.
+Zenexio is a full-service creative agency based in Dubai, UAE, with a delivery team in India. We offer graphic design, web development, digital marketing, and brand strategy for businesses across the UAE and India. Founded in 2017, we've delivered 1000+ projects with transparent, scoped pricing, replies within one business day, and full client ownership of every source file and deliverable. From logo and brand identity design to custom websites, e-commerce stores, SEO, and paid campaigns, our team handles strategy through execution under one roof — so nothing gets lost between vendors. Serving startups, SMEs, restaurants, real estate agencies, clinics, and salons across Dubai, the wider UAE, and India.
 ```
 (≈680 characters — safely under the 750 limit)
 
@@ -67,7 +67,7 @@ India
 
 ## Opening Update / first Post (GBP lets you publish "Posts" like mini social updates)
 ```
-We're Zenexio — a full-service creative agency in Dubai serving the UAE and India. Graphic design, web development, digital marketing, and brand strategy under one roof. 500+ projects delivered, replies within one business day. Get a free quote today.
+We're Zenexio — a full-service creative agency in Dubai serving the UAE and India. Graphic design, web development, digital marketing, and brand strategy under one roof. 1000+ projects delivered, replies within one business day. Get a free quote today.
 ```
 CTA button: "Learn more" → https://zenexio.pro/contact
 

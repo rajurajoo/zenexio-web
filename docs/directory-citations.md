@@ -13,12 +13,12 @@ https://zenexio.pro
 
 ## Short description (150 characters — for listings with tight limits)
 ```
-Full-service creative agency in Dubai, UAE & India. Graphic design, web development, digital marketing & brand strategy. 500+ projects delivered.
+Full-service creative agency in Dubai, UAE & India. Graphic design, web development, digital marketing & brand strategy. 1000+ projects delivered.
 ```
 
 ## Long description (for directories with more room — reuse the GBP description)
 ```
-Zenexio is a full-service creative agency based in Dubai, UAE, with a delivery team in India. We offer graphic design, web development, digital marketing, and brand strategy for businesses across the UAE and India. Founded in 2017, we've delivered 500+ projects with transparent, scoped pricing, replies within one business day, and full client ownership of every source file and deliverable.
+Zenexio is a full-service creative agency based in Dubai, UAE, with a delivery team in India. We offer graphic design, web development, digital marketing, and brand strategy for businesses across the UAE and India. Founded in 2017, we've delivered 1000+ projects with transparent, scoped pricing, replies within one business day, and full client ownership of every source file and deliverable.
 ```
 
 ## Priority 1 — General business directories (do these first)
