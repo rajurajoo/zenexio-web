@@ -1,7 +1,7 @@
 import Reveal from '../../components/Reveal';
 import ContactForm from '../../components/ContactForm';
 import Breadcrumbs from '../../components/Breadcrumbs';
-import ImageSlot from '../../components/ImageSlot';
+import PhotoFrame from '../../components/PhotoFrame';
 import { seo, buildMetadata } from '../../lib/seo';
 
 export const metadata = buildMetadata({
@@ -48,7 +48,7 @@ export default function ContactPage() {
               </div>
 
               <div style={{ marginTop: '2rem' }}>
-                <ImageSlot label="Office Photo" ratio="4/3" />
+                <PhotoFrame src="/images/zenexio-creative-studio-office-dubai.png" alt="Zenexio creative studio office in Dubai" ratio="4/3" />
               </div>
             </Reveal>
 

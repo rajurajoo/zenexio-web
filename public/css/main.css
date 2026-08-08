@@ -854,3 +854,13 @@ h1,h2,h3,h4,h5 {
   opacity: 0.75;
 }
 .img-slot--rounded { border-radius: var(--r-xl); }
+
+/* ─── PHOTO FRAME (real client-supplied images) ─── */
+.photo-frame {
+  position: relative;
+  width: 100%;
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+.photo-frame--rounded { border-radius: var(--r-xl); }

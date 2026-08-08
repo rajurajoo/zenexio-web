@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Reveal from '../../components/Reveal';
 import PageBanner from '../../components/PageBanner';
 import ContactForm from '../../components/ContactForm';
-import ImageSlot from '../../components/ImageSlot';
+import PhotoFrame from '../../components/PhotoFrame';
 import { seo, buildMetadata } from '../../lib/seo';
 
 export const metadata = buildMetadata({
@@ -88,10 +88,10 @@ export default function ServicesPage() {
       <section className="section">
         <div className="container">
           <div className="snapshots-grid">
-            <Reveal delay={0.05}><ImageSlot label="Work Sample 1" ratio="4/3" /></Reveal>
-            <Reveal delay={0.1}><ImageSlot label="Work Sample 2" ratio="4/3" /></Reveal>
-            <Reveal delay={0.15}><ImageSlot label="Work Sample 3" ratio="4/3" /></Reveal>
-            <Reveal delay={0.2}><ImageSlot label="Work Sample 4" ratio="4/3" /></Reveal>
+            <Reveal delay={0.05}><PhotoFrame src="/images/graphic-design-branding-exhibition-dubai.png" alt="Graphic design and branding exhibition work by Zenexio, Dubai" ratio="4/3" /></Reveal>
+            <Reveal delay={0.1}><PhotoFrame src="/images/ecommerce-website-design-portfolio-dubai.png" alt="E-commerce website design portfolio by Zenexio, Dubai" ratio="4/3" /></Reveal>
+            <Reveal delay={0.15}><PhotoFrame src="/images/seo-search-optimization-services-dubai.png" alt="SEO and search optimization services by Zenexio, Dubai" ratio="4/3" /></Reveal>
+            <Reveal delay={0.2}><PhotoFrame src="/images/brand-identity-creative-concept-art-dubai.png" alt="Brand identity creative concept art by Zenexio, Dubai" ratio="4/3" /></Reveal>
           </div>
         </div>
       </section>

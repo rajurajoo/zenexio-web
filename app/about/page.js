@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Reveal from '../../components/Reveal';
 import PageBanner from '../../components/PageBanner';
-import ImageSlot from '../../components/ImageSlot';
+import PhotoFrame from '../../components/PhotoFrame';
 import { seo, buildMetadata } from '../../lib/seo';
 
 export const metadata = buildMetadata({
@@ -55,7 +55,7 @@ export default function AboutPage() {
       {/* Studio Photo */}
       <section className="section">
         <div className="container">
-          <Reveal><ImageSlot label="Studio / Office Photo" ratio="21/9" /></Reveal>
+          <Reveal><PhotoFrame src="/images/graphic-design-branding-exhibition-dubai.png" alt="Graphic design and branding exhibition at Zenexio, Dubai" ratio="21/9" sizes="100vw" /></Reveal>
         </div>
       </section>
 
@@ -100,9 +100,9 @@ export default function AboutPage() {
             <h2>Meet the team</h2>
           </Reveal>
           <div className="studio-strip-grid">
-            <Reveal delay={0.05}><ImageSlot label="Team Member 1" ratio="1/1" /></Reveal>
-            <Reveal delay={0.1}><ImageSlot label="Team Member 2" ratio="1/1" /></Reveal>
-            <Reveal delay={0.15}><ImageSlot label="Team Member 3" ratio="1/1" /></Reveal>
+            <Reveal delay={0.05}><PhotoFrame src="/images/creative-agency-client-consultation-dubai.png" alt="Zenexio team consulting with a client in Dubai" ratio="1/1" /></Reveal>
+            <Reveal delay={0.1}><PhotoFrame src="/images/graphic-designer-color-palette-workspace-dubai.png" alt="Zenexio graphic designer working with colour palette, Dubai" ratio="1/1" /></Reveal>
+            <Reveal delay={0.15}><PhotoFrame src="/images/brand-identity-creative-concept-art-dubai.png" alt="Brand identity creative concept art by Zenexio, Dubai" ratio="1/1" /></Reveal>
           </div>
         </div>
       </section>

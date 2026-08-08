@@ -9,6 +9,38 @@
       <image:title>Zenexio logo</image:title>
     </image:image>
     <image:image>
+      <image:loc>https://zenexio.pro/images/zenexio-design-beyond-imagination-hero-dubai.webp</image:loc>
+      <image:title>Zenexio — Design Beyond Imagination, creative agency in Dubai</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://zenexio.pro/images/ecommerce-website-design-portfolio-dubai.png</image:loc>
+      <image:title>E-commerce website design portfolio by Zenexio, Dubai</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://zenexio.pro/images/website-design-mockup-laptop-dubai.png</image:loc>
+      <image:title>Website design mockup on laptop by Zenexio, Dubai</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://zenexio.pro/images/responsive-website-design-mockup-dubai.png</image:loc>
+      <image:title>Responsive website design mockup for Dubai business by Zenexio</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://zenexio.pro/images/seo-search-optimization-services-dubai.png</image:loc>
+      <image:title>SEO and search optimization services by Zenexio, Dubai</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://zenexio.pro/images/zenexio-creative-studio-office-dubai.png</image:loc>
+      <image:title>Zenexio creative studio office in Dubai</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://zenexio.pro/images/creative-team-collaboration-meeting-dubai.png</image:loc>
+      <image:title>Creative team collaboration meeting at Zenexio, Dubai</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://zenexio.pro/images/web-designer-at-work-dubai-agency.png</image:loc>
+      <image:title>Web designer at work at Zenexio, a Dubai creative agency</image:title>
+    </image:image>
+    <image:image>
       <image:loc>https://zenexio.pro/images/blog/branding.webp</image:loc>
       <image:title>Brand identity design work by Zenexio, Dubai</image:title>
     </image:image>
@@ -37,11 +69,43 @@
     <loc>https://zenexio.pro/about</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://zenexio.pro/images/graphic-design-branding-exhibition-dubai.png</image:loc>
+      <image:title>Graphic design and branding exhibition at Zenexio, Dubai</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://zenexio.pro/images/creative-agency-client-consultation-dubai.png</image:loc>
+      <image:title>Zenexio team consulting with a client in Dubai</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://zenexio.pro/images/graphic-designer-color-palette-workspace-dubai.png</image:loc>
+      <image:title>Zenexio graphic designer working with colour palette, Dubai</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://zenexio.pro/images/brand-identity-creative-concept-art-dubai.png</image:loc>
+      <image:title>Brand identity creative concept art by Zenexio, Dubai</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://zenexio.pro/services</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zenexio.pro/images/graphic-design-branding-exhibition-dubai.png</image:loc>
+      <image:title>Graphic design and branding exhibition work by Zenexio, Dubai</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://zenexio.pro/images/ecommerce-website-design-portfolio-dubai.png</image:loc>
+      <image:title>E-commerce website design portfolio by Zenexio, Dubai</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://zenexio.pro/images/seo-search-optimization-services-dubai.png</image:loc>
+      <image:title>SEO and search optimization services by Zenexio, Dubai</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://zenexio.pro/images/brand-identity-creative-concept-art-dubai.png</image:loc>
+      <image:title>Brand identity creative concept art by Zenexio, Dubai</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://zenexio.pro/blogs</loc>
@@ -495,6 +559,10 @@
     <loc>https://zenexio.pro/contact</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://zenexio.pro/images/zenexio-creative-studio-office-dubai.png</image:loc>
+      <image:title>Zenexio creative studio office in Dubai</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://zenexio.pro/privacy-policy</loc>

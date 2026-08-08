@@ -5,7 +5,7 @@ export default function HeroCosmic() {
     <section className="chero" id="hero">
       <div
         className="chero__bg"
-        style={{ backgroundImage: "url('/images/hero-lone-tree-lake.svg')" }}
+        style={{ backgroundImage: "url('/images/zenexio-design-beyond-imagination-hero-dubai.webp')" }}
         aria-hidden="true"
       />
       <div className="chero__overlay" aria-hidden="true" />

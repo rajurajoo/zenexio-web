@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Reveal from '../components/Reveal';
 import HeroCosmic from '../components/HeroCosmic';
-import ImageSlot from '../components/ImageSlot';
+import PhotoFrame from '../components/PhotoFrame';
 import { seo, buildMetadata } from '../lib/seo';
 
 export const metadata = buildMetadata({
@@ -217,10 +217,10 @@ export default function HomePage() {
             <h2>Real projects, real results</h2>
           </Reveal>
           <div className="snapshots-grid">
-            <Reveal delay={0.05}><ImageSlot label="Project Screenshot 1" ratio="4/3" /></Reveal>
-            <Reveal delay={0.1}><ImageSlot label="Project Screenshot 2" ratio="4/3" /></Reveal>
-            <Reveal delay={0.15}><ImageSlot label="Project Screenshot 3" ratio="4/3" /></Reveal>
-            <Reveal delay={0.2}><ImageSlot label="Project Screenshot 4" ratio="4/3" /></Reveal>
+            <Reveal delay={0.05}><PhotoFrame src="/images/ecommerce-website-design-portfolio-dubai.png" alt="E-commerce website design portfolio by Zenexio, Dubai" ratio="4/3" /></Reveal>
+            <Reveal delay={0.1}><PhotoFrame src="/images/website-design-mockup-laptop-dubai.png" alt="Website design mockup on laptop by Zenexio, Dubai" ratio="4/3" /></Reveal>
+            <Reveal delay={0.15}><PhotoFrame src="/images/responsive-website-design-mockup-dubai.png" alt="Responsive website design mockup for Dubai business by Zenexio" ratio="4/3" /></Reveal>
+            <Reveal delay={0.2}><PhotoFrame src="/images/seo-search-optimization-services-dubai.png" alt="SEO and search optimization services by Zenexio, Dubai" ratio="4/3" /></Reveal>
           </div>
         </div>
       </section>
@@ -233,9 +233,9 @@ export default function HomePage() {
             <h2>Our studio &amp; the people behind it</h2>
           </Reveal>
           <div className="studio-strip-grid">
-            <Reveal delay={0.05}><ImageSlot label="Studio Photo" ratio="1/1" /></Reveal>
-            <Reveal delay={0.1}><ImageSlot label="Team Photo" ratio="1/1" /></Reveal>
-            <Reveal delay={0.15}><ImageSlot label="Team at Work" ratio="1/1" /></Reveal>
+            <Reveal delay={0.05}><PhotoFrame src="/images/zenexio-creative-studio-office-dubai.png" alt="Zenexio creative studio office in Dubai" ratio="1/1" /></Reveal>
+            <Reveal delay={0.1}><PhotoFrame src="/images/creative-team-collaboration-meeting-dubai.png" alt="Creative team collaboration meeting at Zenexio, Dubai" ratio="1/1" /></Reveal>
+            <Reveal delay={0.15}><PhotoFrame src="/images/web-designer-at-work-dubai-agency.png" alt="Web designer at work at Zenexio, a Dubai creative agency" ratio="1/1" /></Reveal>
           </div>
         </div>
       </section>
