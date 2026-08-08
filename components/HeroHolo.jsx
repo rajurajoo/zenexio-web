@@ -28,7 +28,7 @@ const SLIDES = [
     titleWhite: 'Design',
     titleAccent: 'Unbound',
     accent: 'pink',
-    body: 'Teams that understand Dubai, the UAE, and India natively — 500+ projects delivered across both markets.',
+    body: 'Teams that understand Dubai, the UAE, and India natively — 1000+ projects delivered across both markets.',
     cta: { label: 'Meet The Team', href: '/about' }
   },
   {

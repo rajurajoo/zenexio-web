@@ -40,7 +40,7 @@ export default function HomePage() {
               <Link href="/about" className="btn btn--gold">Discover Our Story</Link>
             </Reveal>
             <Reveal className="intro__cards" delay={0.12}>
-              <div className="icard"><span className="icard__num">500+</span><span className="icard__label">Projects Delivered</span></div>
+              <div className="icard"><span className="icard__num">1000+</span><span className="icard__label">Projects Delivered</span></div>
               <div className="icard"><span className="icard__num">7+</span><span className="icard__label">Years of Craft</span></div>
               <div className="icard"><span className="icard__num">98%</span><span className="icard__label">Client Retention</span></div>
               <div className="icard"><span className="icard__num">40+</span><span className="icard__label">Industries Served</span></div>
@@ -225,7 +225,7 @@ export default function HomePage() {
             <h2>Let&apos;s build something extraordinary together</h2>
             <Link href="/contact" className="btn btn--gold btn--lg">Start a Project</Link>
             <div className="trust-strip">
-              <span><strong>500+</strong> Projects Delivered</span>
+              <span><strong>1000+</strong> Projects Delivered</span>
               <span className="trust-sep">·</span>
               <span><strong>98%</strong> Client Retention</span>
               <span className="trust-sep">·</span>

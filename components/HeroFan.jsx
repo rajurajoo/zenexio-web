@@ -22,7 +22,7 @@ const SLIDES = [
     eyebrow: 'Dubai · UAE · India',
     titleLine1: 'Design',
     titleLine2: 'Unbound',
-    body: 'Teams that understand Dubai, the UAE, and India natively — 500+ projects delivered across both markets.',
+    body: 'Teams that understand Dubai, the UAE, and India natively — 1000+ projects delivered across both markets.',
     cta: { label: 'Explore', href: '/about' }
   },
   {

@@ -27,7 +27,7 @@ const orgJsonLd = {
   '@type': 'ProfessionalService',
   '@id': 'https://zenexio.pro/#organization',
   name: 'Zenexio',
-  description: 'Zenexio is a full-service creative agency in Dubai, UAE, with a delivery team in India, offering graphic design, web development, digital marketing, and brand strategy. Founded in 2017, Zenexio has delivered 500+ projects with transparent pricing and full client ownership of deliverables.',
+  description: 'Zenexio is a full-service creative agency in Dubai, UAE, with a delivery team in India, offering graphic design, web development, digital marketing, and brand strategy. Founded in 2017, Zenexio has delivered 1000+ projects with transparent pricing and full client ownership of deliverables.',
   slogan: 'Design Beyond Imagination',
   foundingDate: '2017',
   url: 'https://zenexio.pro',

@@ -302,7 +302,7 @@ export default function ServicesPage() {
               <h2>Which service does your brand need most?</h2>
               <p>Tell us your name, email, and what you need — we&apos;ll follow up within one business day with next steps. No long forms, no pressure.</p>
               <div className="trust-strip" style={{ justifyContent: 'flex-start' }}>
-                <span><strong>500+</strong> Projects Delivered</span>
+                <span><strong>1000+</strong> Projects Delivered</span>
                 <span className="trust-sep">·</span>
                 <span><strong>98%</strong> Client Retention</span>
                 <span className="trust-sep">·</span>

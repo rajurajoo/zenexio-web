@@ -71,7 +71,7 @@ export default function ChecklistPage() {
             <h2>Let Zenexio handle the brand, website, and marketing side</h2>
             <Link href="/contact" className="btn btn--gold btn--lg">Get a Free Quote</Link>
             <div className="trust-strip">
-              <span><strong>500+</strong> Projects Delivered</span>
+              <span><strong>1000+</strong> Projects Delivered</span>
               <span className="trust-sep">·</span>
               <span><strong>98%</strong> Client Retention</span>
               <span className="trust-sep">·</span>

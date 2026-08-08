@@ -129,7 +129,7 @@ export default function ContactForm({ variant = 'full' }) {
 
       {variant === 'full' && (
         <div className="trust-strip">
-          <span><strong>500+</strong> Projects</span>
+          <span><strong>1000+</strong> Projects</span>
           <span className="trust-sep">·</span>
           <span><strong>98%</strong> Retention</span>
           <span className="trust-sep">·</span>
