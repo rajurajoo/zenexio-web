@@ -72,7 +72,7 @@ const servicesFaqJsonLd = {
 export default function ServicesPage() {
   return (
     <>
-    <link rel="stylesheet" href="/css/services.css" />
+    <link rel="stylesheet" href="/css/services.min.css" />
     <main>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(servicesJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(servicesFaqJsonLd) }} />

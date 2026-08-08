@@ -21,7 +21,7 @@ const values = [
 export default function AboutPage() {
   return (
     <>
-    <link rel="stylesheet" href="/css/about.css" />
+    <link rel="stylesheet" href="/css/about.min.css" />
     <main>
       <PageBanner
         label="Who We Are"

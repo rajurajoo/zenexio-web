@@ -14,7 +14,7 @@ export const metadata = buildMetadata({
 export default function ContactPage() {
   return (
     <>
-    <link rel="stylesheet" href="/css/contact.css" />
+    <link rel="stylesheet" href="/css/contact.min.css" />
     <main>
       <section className="contact-wrap">
         <div className="contact-wrap__glow"></div>

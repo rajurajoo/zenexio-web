@@ -5,8 +5,9 @@
   "main": "next.config.js",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
+    "build": "node scripts/minify-css.js && next build",
+    "start": "next start",
+    "minify:css": "node scripts/minify-css.js"
   },
   "keywords": [],
   "author": "",

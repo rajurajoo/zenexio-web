@@ -18,7 +18,7 @@ export default function BlogsPage() {
 
   return (
     <>
-    <link rel="stylesheet" href="/css/blogs.css" />
+    <link rel="stylesheet" href="/css/blogs.min.css" />
     <main>
       <PageBanner
         label="Our Blog"
@@ -32,7 +32,7 @@ export default function BlogsPage() {
         <div className="container">
 
           <Reveal as="article" className="blog-featured">
-            <Link href={`/blogs/${featured.slug}`} className="blog-featured__img">
+            <Link href={`/blogs/${featured.slug}`} className="blog-featured__img" aria-label={featured.title}>
               <div
                 className="blog-featured__img-inner"
                 style={{ background: `linear-gradient(to bottom,rgba(10,8,3,.15),rgba(10,8,3,.6)),url('/images/blog/${featured.image}')`, backgroundSize: 'cover', backgroundPosition: 'center' }}
@@ -44,7 +44,7 @@ export default function BlogsPage() {
               <span className="blog-meta">{featured.date} &nbsp;&middot;&nbsp; {featured.readTime}</span>
               <h2><Link href={`/blogs/${featured.slug}`}>{featured.title}</Link></h2>
               <p>{featured.excerpt}</p>
-              <Link href={`/blogs/${featured.slug}`} className="btn btn--gold">Read Article</Link>
+              <Link href={`/blogs/${featured.slug}`} className="btn btn--gold">Read Article<span className="sr-only">: {featured.title}</span></Link>
             </div>
           </Reveal>
 
@@ -54,6 +54,7 @@ export default function BlogsPage() {
                 <Link
                   href={`/blogs/${p.slug}`}
                   className="blog-card__img"
+                  aria-label={p.title}
                   style={{ background: `linear-gradient(to bottom,rgba(10,8,3,.15),rgba(10,8,3,.6)),url('/images/blog/${p.image}')`, backgroundSize: 'cover', backgroundPosition: 'center' }}
                 >
                   <span className="blog-tag">{p.tag}</span>
@@ -62,7 +63,7 @@ export default function BlogsPage() {
                   <span className="blog-meta">{p.date} &middot; {p.readTime}</span>
                   <h3><Link href={`/blogs/${p.slug}`}>{p.title}</Link></h3>
                   <p>{p.excerpt}</p>
-                  <Link href={`/blogs/${p.slug}`} className="blog-card__link">Read more &rarr;</Link>
+                  <Link href={`/blogs/${p.slug}`} className="blog-card__link">Read more<span className="sr-only">: {p.title}</span> &rarr;</Link>
                 </div>
               </Reveal>
             ))}

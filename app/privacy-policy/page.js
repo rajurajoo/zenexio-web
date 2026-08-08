@@ -12,7 +12,7 @@ export const metadata = buildMetadata({
 export default function PrivacyPolicyPage() {
   return (
     <>
-    <link rel="stylesheet" href="/css/blogs.css" />
+    <link rel="stylesheet" href="/css/blogs.min.css" />
     <main>
       <PageBanner
         label="Legal"

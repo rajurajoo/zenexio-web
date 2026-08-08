@@ -29,7 +29,7 @@ const jsonLd = {
 export default function PricingGuidePage() {
   return (
     <>
-    <link rel="stylesheet" href="/css/blogs.css" />
+    <link rel="stylesheet" href="/css/blogs.min.css" />
     <main>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 

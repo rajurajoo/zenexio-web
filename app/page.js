@@ -15,7 +15,7 @@ export const metadata = buildMetadata({
 export default function HomePage() {
   return (
     <>
-    <link rel="stylesheet" href="/css/home.css" />
+    <link rel="stylesheet" href="/css/home.min.css" />
     <main>
       {/* ═══════════════════════════════════ HERO ═══════════════════════════════════ */}
       <HeroCosmic />
