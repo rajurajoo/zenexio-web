@@ -5,25 +5,25 @@
 ═══════════════════════════════════════════════════ */
 
 :root {
-  --bg:        #ffffff;
-  --bg-2:      #f8f5fa;
-  --bg-3:      #f0eaf4;
-  --surface:   #ffffff;
-  --surface-2: #f8f5fa;
-  --border:    rgba(32,20,40,0.1);
-  --border-2:  rgba(32,20,40,0.16);
+  --bg:        #0a0410;
+  --bg-2:      #0f0817;
+  --bg-3:      #150c20;
+  --surface:   #140b1f;
+  --surface-2: #1a1029;
+  --border:    rgba(255,255,255,0.1);
+  --border-2:  rgba(255,255,255,0.16);
 
-  --text:      #180f1e;
-  --text-2:    #4d3f56;
-  --text-3:    #837890;
+  --text:      #f3ecf8;
+  --text-2:    rgba(243,236,248,0.72);
+  --text-3:    rgba(243,236,248,0.5);
 
-  --gold:      #9333c0;
-  --gold-h:    #7c1f9e;
-  --gold-dim:  rgba(147,51,192,0.1);
-  --gold-glow: rgba(147,51,192,0.28);
-  --sand:      #c026d3;
+  --gold:      #a84fd6;
+  --gold-h:    #c26be8;
+  --gold-dim:  rgba(168,79,214,0.14);
+  --gold-glow: rgba(168,79,214,0.32);
+  --sand:      #d946ef;
   --rust:      #6b1b8f;
-  --night:     #180a24;
+  --night:     #0a0410;
   --dusk:      #4a1868;
 
   --font-disp: 'Cinzel', serif;
@@ -37,11 +37,11 @@
   --r-xl:   32px;
   --r-full: 9999px;
 
-  --sh-gold: 0 0 40px rgba(147,51,192,0.2);
-  --sh-lg:   0 16px 48px rgba(32,20,40,0.14);
+  --sh-gold: 0 0 40px rgba(168,79,214,0.25);
+  --sh-lg:   0 16px 48px rgba(0,0,0,0.45);
 
-  --emboss-light: rgba(255,255,255,0.75);
-  --emboss-dark:  rgba(20,24,32,0.28);
+  --emboss-light: rgba(255,255,255,0.08);
+  --emboss-dark:  rgba(0,0,0,0.5);
 
   --ease-out: cubic-bezier(0.16,1,0.3,1);
   --ease-io:  cubic-bezier(0.4,0,0.2,1);
@@ -366,14 +366,14 @@ h1,h2,h3,h4,h5 {
   position: relative;
   overflow: hidden;
   text-align: center;
-  background: #f5f7fb;
+  background: var(--bg);
 }
 .page-banner__bg {
   position: absolute; inset: 0;
   background:
-    linear-gradient(160deg, #eef2fa 0%, #f5f7fb 55%),
-    radial-gradient(ellipse 70% 70% at 50% 0%, rgba(47,111,214,0.1), transparent 70%),
-    radial-gradient(circle at 88% 15%, rgba(120,90,224,0.08), transparent 42%);
+    linear-gradient(160deg, var(--bg) 0%, var(--bg-2) 55%),
+    radial-gradient(ellipse 70% 70% at 50% 0%, rgba(168,79,214,0.22), transparent 70%),
+    radial-gradient(circle at 88% 15%, rgba(217,70,239,0.16), transparent 42%);
   pointer-events: none;
   overflow: hidden;
 }
