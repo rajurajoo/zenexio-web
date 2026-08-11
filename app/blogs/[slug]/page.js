@@ -77,6 +77,11 @@ export default async function BlogPostPage({ params }) {
               <Fragment key={i}>
                 {block.h2 ? (
                   <h2>{block.h2}</h2>
+                ) : block.img ? (
+                  <figure className="post-inline-figure">
+                    <Image className="post-inline-img" src={`/images/blog/${block.img}`} alt={block.imgAlt || post.title} fill sizes="(max-width: 760px) 100vw, 760px" loading="lazy" />
+                    {block.imgAlt && <figcaption>{block.imgAlt}</figcaption>}
+                  </figure>
                 ) : (
                   <p dangerouslySetInnerHTML={{ __html: block.p }} />
                 )}
