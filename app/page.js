@@ -78,7 +78,7 @@ export default function HomePage() {
             </Reveal>
             <Reveal className="intro__cards" delay={0.12}>
               <div className="icard"><span className="icard__num">1000+</span><span className="icard__label">Projects Delivered</span></div>
-              <div className="icard"><span className="icard__num">7+</span><span className="icard__label">Years of Craft</span></div>
+              <div className="icard"><span className="icard__num">8+</span><span className="icard__label">Years of Craft</span></div>
               <div className="icard"><span className="icard__num">98%</span><span className="icard__label">Client Retention</span></div>
               <div className="icard"><span className="icard__num">40+</span><span className="icard__label">Industries Served</span></div>
             </Reveal>
@@ -189,7 +189,7 @@ export default function HomePage() {
             </Reveal>
             <Reveal href="/services#web" className="sp-card sp-card--featured" delay={0.1}>
               <div className="sp-card__icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="2.5"><rect x="4" y="8" width="40" height="28" rx="3" /><path d="M16 44h16M24 36v8" strokeLinecap="round" /><path d="M14 20l5 5-5 5M22 28h8" strokeLinecap="round" strokeLinejoin="round" /></svg></div>
-              <h3>Web Development</h3><p>Fast, beautiful, accessible websites that perform as good as they look.</p>
+              <h3>Web Development</h3><p>Fast, beautiful, accessible websites that perform as well as they look.</p>
               <span className="sp-card__arrow">→</span>
             </Reveal>
             <Reveal href="/services#marketing" className="sp-card" delay={0.15}>

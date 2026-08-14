@@ -40,7 +40,7 @@ export default function AboutPage() {
               <h2>Started small. Stayed intentional.</h2>
               <p>Zenexio was founded in 2017 by three restless creatives who believed most agencies had it backwards — prioritising flashy pitches over genuine partnership, and output over impact.</p>
               <p>We started in a shared workspace with three laptops and an unwavering belief: that truly great creative work happens when strategy, design, and technology speak the same language.</p>
-              <p>Seven years later, we&apos;ve delivered 1000+ projects for clients across Dubai, UAE and India — and beyond. But our approach hasn&apos;t changed — every client gets our full attention, honest counsel, and work we&apos;re proud of.</p>
+              <p>Since 2017, we&apos;ve delivered 1000+ projects for clients across Dubai, the UAE, India — and beyond. Our approach hasn&apos;t changed — every client gets our full attention, honest counsel, and work we&apos;re proud of.</p>
             </Reveal>
             <Reveal className="story-stat-block" delay={0.12}>
               <div className="sstat"><span className="sstat__num">2017</span><span className="sstat__lbl">Founded</span></div>

@@ -135,7 +135,7 @@ export default function ServicesPage() {
           <div className="svc-grid svc-grid--rev">
             <Reveal className="svc-text">
               <span className="label">02 — Web Development</span>
-              <h2>Websites that perform as good as they look</h2>
+              <h2>Websites that perform as well as they look</h2>
               <p>We build websites and web applications with a focus on speed, accessibility, and scalability. Every line of code is purposeful — no bloat, no shortcuts.</p>
               <p>From marketing sites to complex e-commerce platforms, we use the right technology for the job and ensure every project is built to grow with you.</p>
               <Link href="/contact" className="btn btn--gold">Start Your Build</Link>
