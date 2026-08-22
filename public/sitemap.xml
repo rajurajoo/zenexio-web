@@ -1027,6 +1027,24 @@
     </image:image>
   </url>
   <url>
+    <loc>https://zenexio.pro/blogs/ecommerce-product-photography-dubai</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://zenexio.pro/images/blog/zenexio-ecommerce-product-photography-dubai.webp</image:loc>
+      <image:title>E-commerce product photography in Dubai</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://zenexio.pro/blogs/professional-product-photography-dubai</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://zenexio.pro/images/blog/zenexio-professional-product-photography-dubai.webp</image:loc>
+      <image:title>Professional product photography in Dubai</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://zenexio.pro/resources/brand-launch-checklist-dubai</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
