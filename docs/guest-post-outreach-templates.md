@@ -73,3 +73,29 @@ Best,
 - **The article has to actually be good and not a thinly-veiled ad.** One contextual link back to zenexio.pro (or a specific relevant page, like a blog post) in the author bio or body is normal; multiple self-promotional links will get the piece rejected or the link stripped.
 - **Track outreach in a simple log**: publication, contact, date sent, response, published URL — so you know what worked and can follow up once (not repeatedly) if you don't hear back after 1-2 weeks.
 - **Realistic expectations**: a genuine guest post placement on a real UAE publication typically takes days-to-weeks of back-and-forth (pitch → approval → draft → edits → publish), not an instant listing like a directory. It's slower than directory submissions but the resulting backlink carries real authority.
+
+---
+
+## Template 4 — Asking past clients to add the website credit badge
+
+The single highest-quality, lowest-effort backlink source available: real clients, who already have a genuine relationship with Zenexio, linking back from their own live site. Send this to any past client whose site doesn't already credit you.
+
+**Subject:** Quick favor — mind adding a small footer credit?
+
+Hi [Client name],
+
+Hope the site's been running well since launch! Quick, no-pressure ask: would you mind adding a small "Website by Zenexio" credit line in your footer? It's a tiny, self-contained snippet — no fonts, no extra CSS, won't affect your site's look or speed.
+
+Here's the code, ready to paste: https://zenexio.pro/resources/website-credit-badge
+
+Totally understand if it's not a fit for the brand — just let me know either way. And if anything's come up with the site since launch, happy to take a look.
+
+Best,
+[Your name]
+Zenexio
+
+---
+
+## Making the badge a standard practice going forward
+
+For every new project, add "offer the website credit badge" as a line item at project handoff — it's the easiest backlink to get since the relationship and trust are already established. Consider offering a small incentive (e.g., a discount on future work) for clients who add it.
