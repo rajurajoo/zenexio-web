@@ -319,7 +319,7 @@ export default function HomePage() {
           <div className="faq-list">
             <Reveal as="details" className="faq-item" delay={0.02}>
               <summary>What services does Zenexio offer?</summary>
-              <p>Zenexio offers graphic design, web development, digital marketing, brand strategy, and motion design as a full-service creative agency.</p>
+              <p>Zenexio offers graphic design, web development, digital marketing, brand strategy, motion design, and custom <Link href="/blogs/best-crm-software-dubai">CRM software</Link> as a full-service creative agency.</p>
             </Reveal>
             <Reveal as="details" className="faq-item" delay={0.06}>
               <summary>Where is Zenexio located and who do they serve?</summary>

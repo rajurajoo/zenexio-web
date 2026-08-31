@@ -170,7 +170,7 @@ export default function ServicesPage() {
               <span className="label">03 — CRM Portal Development</span>
               <h2>Best-price CRM systems built around how you actually sell</h2>
               <p>Off-the-shelf CRM subscriptions charge per seat, forever, and rarely fit your exact sales process. We build custom CRM portals — owned outright, no recurring licence fees, and shaped around your real pipeline from day one.</p>
-              <p>Real estate, clinics and salons, e-commerce, or general B2B — every CRM we build includes WhatsApp integration, role-based access, and full data ownership at launch.</p>
+              <p>Real estate, clinics and salons, e-commerce, or general B2B — every CRM we build includes WhatsApp integration, role-based access, and full data ownership at launch. Not sure custom is the right call yet? See our <Link href="/blogs/best-crm-software-dubai">guide to the best CRM software in Dubai</Link> for an honest comparison, or our <Link href="/blogs/supply-chain-management-erp-software">supply chain &amp; ERP software</Link> guide if inventory and procurement are the bigger bottleneck.</p>
               <Link href="/contact" className="btn btn--gold">Get a CRM Quote</Link>
             </Reveal>
             <Reveal className="svc-feats" delay={0.12}>
