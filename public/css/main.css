@@ -5,23 +5,23 @@
 ═══════════════════════════════════════════════════ */
 
 :root {
-  --bg:        #0a0410;
-  --bg-2:      #0f0817;
-  --bg-3:      #150c20;
-  --surface:   #140b1f;
-  --surface-2: #1a1029;
-  --border:    rgba(255,255,255,0.1);
-  --border-2:  rgba(255,255,255,0.16);
+  --bg:        #f4f4f4;
+  --bg-2:      #ffffff;
+  --bg-3:      #ececec;
+  --surface:   #ffffff;
+  --surface-2: #f7f5f8;
+  --border:    rgba(20,10,30,0.1);
+  --border-2:  rgba(20,10,30,0.16);
 
-  --text:      #f3ecf8;
-  --text-2:    rgba(243,236,248,0.72);
-  --text-3:    rgba(243,236,248,0.5);
+  --text:      #141017;
+  --text-2:    rgba(20,16,23,0.7);
+  --text-3:    rgba(20,16,23,0.5);
 
-  --gold:      #a84fd6;
-  --gold-h:    #c26be8;
-  --gold-dim:  rgba(168,79,214,0.14);
-  --gold-glow: rgba(168,79,214,0.32);
-  --sand:      #d946ef;
+  --gold:      #9333c0;
+  --gold-h:    #7c1f9e;
+  --gold-dim:  rgba(147,51,192,0.1);
+  --gold-glow: rgba(147,51,192,0.28);
+  --sand:      #c026d3;
   --rust:      #6b1b8f;
   --night:     #0a0410;
   --dusk:      #4a1868;
@@ -37,11 +37,11 @@
   --r-xl:   32px;
   --r-full: 9999px;
 
-  --sh-gold: 0 0 40px rgba(168,79,214,0.25);
-  --sh-lg:   0 16px 48px rgba(0,0,0,0.45);
+  --sh-gold: 0 0 40px rgba(147,51,192,0.2);
+  --sh-lg:   0 16px 48px rgba(20,10,30,0.12);
 
-  --emboss-light: rgba(255,255,255,0.08);
-  --emboss-dark:  rgba(0,0,0,0.5);
+  --emboss-light: rgba(255,255,255,0.75);
+  --emboss-dark:  rgba(20,10,30,0.22);
 
   --ease-out: cubic-bezier(0.16,1,0.3,1);
   --ease-io:  cubic-bezier(0.4,0,0.2,1);
@@ -533,12 +533,18 @@ h1,h2,h3,h4,h5 {
 
 /* ─── FOOTER ────────────────────────────────────── */
 .footer {
-  background: var(--bg-2);
-  border-top: 1px solid var(--border);
+  background: var(--night);
+  color: rgba(255,255,255,0.7);
+  border-top: 1px solid rgba(255,255,255,0.1);
   padding-block: 4rem 2rem;
   position: relative;
   overflow: hidden;
 }
+.footer__brand p { color: rgba(255,255,255,0.6); }
+.footer__soc { border-color: rgba(255,255,255,0.16); color: rgba(255,255,255,0.6); }
+.footer__col h4 { color: rgba(255,255,255,0.45); }
+.footer__col a, .footer__col address p, .footer__col address a { color: rgba(255,255,255,0.72); }
+.footer__bottom { color: rgba(255,255,255,0.45); border-top-color: rgba(255,255,255,0.1); }
 .footer__dunes {
   position: absolute;
   top: 0; left: 0; right: 0;
